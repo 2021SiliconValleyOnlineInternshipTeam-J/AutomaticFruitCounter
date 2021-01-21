@@ -17,6 +17,6 @@ def testapi(request):
         file = request.FILES['image']
         file.name = "test.jpg"
         default_storage.save("images" + '/' + file.name, file)
-        fruitData = {"id": 1, "file_name": "test" + '/' + file.name}
-        result = MongoDbManager().add_user_on_collection(fruitData)
-        return HttpResponse(status=201)
+        data = {"file_name": "test" + '/' + file.name}
+        result = MongoDbManager().add_user_on_collection(data)
+        return HttpResponse(status=201) if result else HttpResponse(status=500)
