@@ -13,7 +13,7 @@ const SelectUploadPage = ( { history } ) => {
         padding: '40px 20px',
         margin: '20px', // top-button, left-right
         border: '4px solid #FFDD00',
-        color: '#FFDD00',
+        color: '#FFE32C',
     }
 
     const cam_btn = {
@@ -22,8 +22,8 @@ const SelectUploadPage = ( { history } ) => {
         display: 'inline',
         padding: '40px 20px',
         margin: '20px',
-        border: '4px solid #D6D6D6',
-        color: '#D6D6D6',
+        border: '4px solid #ffe32c7a',
+        color: '#ffe32c7a',
     }
 
     const home_btn = {
@@ -46,8 +46,8 @@ const SelectUploadPage = ( { history } ) => {
             <TopNavigator />
             <div style={{fontSize: '45px', padding: '40px', margin:'20px'}}>계산 방식을 선택해주세요.</div>
             <div>
-                <Link to='/imageupload' style={{ textDecoration: 'none' }}><div style={picture_btn}>사진 업로드</div></Link>
-                <div style={cam_btn}>실시간 카메라</div>
+                <Link to='/imageupload' style={{ textDecoration: 'none' }}><div style={cam_btn}>사진 업로드</div></Link>
+                <Link to='/webcam' style={{ textDecoration: 'none' }}><div style={cam_btn}>실시간 카메라</div></Link>
             </div>
             <div style={btn_div}>
                 <Link to='/'><div className='gray_button'>이전으로</div></Link>

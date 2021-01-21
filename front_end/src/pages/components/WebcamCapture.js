@@ -32,15 +32,11 @@ const WebcamCapture = () => {
       <div style={parent_div}>
           <div style={{fontSize: '55px', color: '#000000',padding:'60px'}}>실시간 카메라</div>
           <>
-
           <Webcam
             audio={false}
             ref={webcamRef}
             screenshotFormat="image/jpeg"
           />
-
-          <button onClick={capture} style={button_style}>다음으로</button>
-
           </>
       </div>
   );
