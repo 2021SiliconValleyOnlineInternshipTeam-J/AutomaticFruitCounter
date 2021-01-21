@@ -10,6 +10,7 @@ const Home = ( { history } ) => {
         width: '100%',
         height: '100%',
         textAlign: 'center',
+        marginTop:'20%'
     }
     const button_style = {
         backgroundColor: '#FFE32C',
@@ -17,7 +18,7 @@ const Home = ( { history } ) => {
         width: '160px',
         fontSize: '40px',
         borderRadius: '12px',
-        position: 'absolute', left: '50%', top: '50%',
+        position: 'absolute', left: '50%', top: '60%',
         transform: 'translate(-50%, -50%)'
     }
     return (
