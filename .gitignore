@@ -185,3 +185,9 @@ mongo/
 
 # ignore pycache
 __pycache__/
+
+# image
+.jpg
+.jpeg
+.png
+images
