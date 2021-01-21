@@ -101,6 +101,8 @@ from django.views.decorators.csrf import csrf_exempt
 from django.http import HttpResponse
 from api.models import MongoDbManager
 import json
+import gridfs
+from django.core.files.storage import default_storage
 
 
 def specific_user(request, username):
@@ -157,6 +159,7 @@ def add(request):
 def testapi(request):
 
     if request.method == 'POST':
+        """
         try:
             print("오긴 옴")
             data = json.loads(request.body)
@@ -168,11 +171,10 @@ def testapi(request):
             'name': data['name'],
         }
 
+        result = MongoDbManager().add_user_on_collection(fruitData)"""
+        file = request.FILES['image']
+        file.name = "test.jpg"
+        default_storage.save("images" + '/' + file.name, file)
+        fruitData = {"id": 1, "file_name": "test" + '/' + file.name}
         result = MongoDbManager().add_user_on_collection(fruitData)
-        return HttpResponse(status=201) if result else HttpResponse(status=500)
-
-    elif request.method == 'DELETE':
-        return HttpResponse(status=204)
-
-    else:
-        return HttpResponse(status=405)
+        return HttpResponse(status=201)

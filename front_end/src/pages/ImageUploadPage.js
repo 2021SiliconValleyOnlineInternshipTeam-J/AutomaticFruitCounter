@@ -74,11 +74,11 @@ const ImageUpload = ( { history } ) => {
             reader.readAsDataURL(event.dataTransfer.files[0]);
             // Create Form Data
             const payload = new FormData();
-            payload.append('file', event.dataTransfer.files[0]);
+            payload.append('image', event.dataTransfer.files[0]);
             // XHR - New XHR Request
             const xhr = new XMLHttpRequest();
             // XHR - Make Request
-            xhr.open('POST', 'http://localhost:5000/upload');
+            xhr.open('POST', 'http://localhost:8000/api/addimage/');
             xhr.send(payload);
         }
         event.preventDefault();
