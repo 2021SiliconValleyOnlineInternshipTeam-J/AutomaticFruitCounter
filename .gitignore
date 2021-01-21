@@ -182,3 +182,6 @@ mongo/
 
 # ignore .idea
 .idea
+
+# ignore pycache
+__pycache__/
