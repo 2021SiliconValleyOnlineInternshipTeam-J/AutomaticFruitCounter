@@ -1,0 +1,128 @@
+.ImageCenter {
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ImagePreview {
+    opacity: 0;
+    display: block;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    position: absolute;
+    overflow: hidden;
+    transition: all 500ms ease-in-out 250ms;
+}
+.ImagePreview.Show {
+    opacity: 1;
+}
+
+.ImageProgress {
+    opacity: 0;
+    display: block;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    overflow: hidden;
+    transition: all 500ms ease-in-out 250ms;
+}
+.ImageProgress.Show {
+    opacity: 1;
+}
+
+.ImagePreview > div {
+    position: absolute;
+    background-size: cover;
+    filter: blur(20px);
+    left: -40px;
+    right: -40px;
+    bottom: -40px;
+    top: -40px;
+}
+
+.DropArea {
+    background: #efefef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(60vw - 60px);
+    height: calc(50vh - 50px);
+    border: solid 40px transparent;
+    transition: all 250ms ease-in-out 0s;
+    position: relative;
+}
+
+.DropArea.Over {
+    border: solid 40px rgba(0, 0, 0, 0.2);
+}
+
+.ImageProgress {
+    display: block;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    overflow: hidden;
+}
+.ImageProgress > .ImageProgressImage {
+    opacity: 0.3;
+    position: absolute;
+    background-position: center center;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.ImageProgress > .ImageProgressUploaded {
+    position: absolute;
+    background-position: center center;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    clip-path: inset(0% 0 0 0);
+}
+
+.Status {
+    background: rgba(0, 0, 0, 0.3);
+    display: block;
+    color: #939393;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    line-height: calc(50vh - 50px);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: all 250ms ease-in-out 0s;
+}
+
+.Status {
+    background: transparent;
+    display: block;
+    color: #939393;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    line-height: calc(50vh - 50px);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: all 250ms ease-in-out 0s;
+}
+
+.Status.Uploading {
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+}

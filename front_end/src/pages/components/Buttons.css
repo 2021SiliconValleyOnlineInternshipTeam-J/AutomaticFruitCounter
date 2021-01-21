@@ -1,0 +1,21 @@
+.gray_button {
+    border-radius: 38px;
+    font-size: 45px;
+    color: white;
+    display: inline-block;
+    width: '204px';
+    background: #999A9C 0% 0% no-repeat padding-box;
+    margin: 20px;
+    padding: 12px;
+}
+
+.yellow_button {
+    border-radius: 38px;
+    font-size: 45px;
+    color: white;
+    display: inline-block;
+    width: '204px';
+    background: #FFDD00 0% 0% no-repeat padding-box;
+    margin: 20px;
+    padding: 12px;
+}
