@@ -103,7 +103,7 @@ const ImageUpload = ( { history } ) => {
 
         <div style={{btn_div}}>
             <Link to='/selectupload'><div className='gray_button'>이전으로</div></Link>
-            <Link to='/end'><div className='yellow_button'>다음으로</div></Link>
+            <Link to='/result'><div className='yellow_button'>다음으로</div></Link>
         </div>
     </div>
     );
