@@ -4,7 +4,7 @@ class MongoDbManager:
     _instance = None
     client = pymongo.MongoClient(host='mongo_db',
                                  port=27017)
-    database = client['MyApplicationDB']['MyApplicationCollection']
+    database = client['DB']['CL']
 
     def __new__(cls, *args, **kwargs):
         if not cls._instance:

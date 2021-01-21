@@ -68,16 +68,13 @@ const ImageUpload = ( { history } ) => {
         const supportedFilesTypes = ['image/jpeg', 'image/png'];
         const { type } = event.dataTransfer.files[0];
         if (supportedFilesTypes.indexOf(type) > -1) {
-            // Begin Reading File
             const reader = new FileReader();
             reader.onload = e => setPreview(e.target.result);
             reader.readAsDataURL(event.dataTransfer.files[0]);
-            // Create Form Data
             const payload = new FormData();
             payload.append('image', event.dataTransfer.files[0]);
-            // XHR - New XHR Request
+            console.log(event.dataTransfer.files[0])
             const xhr = new XMLHttpRequest();
-            // XHR - Make Request
             xhr.open('POST', 'http://localhost:8000/api/addimage/');
             xhr.send(payload);
         }
