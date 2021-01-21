@@ -2,6 +2,8 @@ from django.core.files.storage import default_storage
 from django.views.decorators.csrf import csrf_exempt
 from django.http import HttpResponse
 from api.models import MongoDbManager
+from api.detect import YOLO
+from api.detect import Bill
 import gridfs
 import json
 
