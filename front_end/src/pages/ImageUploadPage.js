@@ -4,8 +4,7 @@ import { Link } from 'react-router-dom';
 import TopNavigator from './components/TopNavigator';
 import './components/Buttons.css';
 
-
-const ImageUpload = (history) => {
+const ImageUpload = ( { history } ) => {
     const [status, setStatus] = useState('업로드할 파일을 드래그 해주세요');
     const [percentage, setPercentage] = useState(0);
     const [preview, setPreview] = useState(null);
@@ -90,7 +89,7 @@ const ImageUpload = (history) => {
         <TopNavigator/>
         <div style={{fontSize: '45px', color: '#000000',padding:'0px', textAlign:'center'}}>계산할 사진 업로드</div>
         <div onDragEnter={onDragEnter} onDragLeave={onDragLeave} onDragOver={doNothing} onDrop={onDragLeave}>
-            <div className={`ImagePreview ${preview ? 'Show' : ''}`}>
+
             </div>
             <div className="ImageCenter">
                 <div className={`DropArea ${status === 'Drop' ? 'Over' : ''}`} onDragOver={onDragOver} onDragLeave={onDragEnter} onDrop={onDrop}>
@@ -101,13 +100,11 @@ const ImageUpload = (history) => {
                     <div className="Status">{status}</div>
                 </div>
             </div>
-        </div>
+
         <div style={{btn_div}}>
             <Link to='/selectupload'><div className='gray_button'>이전으로</div></Link>
-            <div className='yellow_button'>다음으로</div>
-            <div></div>
+            <Link to='/end'><div className='yellow_button'>다음으로</div></Link>
         </div>
-
     </div>
     );
 };
