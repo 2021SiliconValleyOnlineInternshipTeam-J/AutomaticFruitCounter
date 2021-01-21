@@ -15,8 +15,12 @@ def testapi(request):
             return HttpResponse(status=400)
 
         file = request.FILES['image']
-        file.name = "test.jpg"
-        default_storage.save("images" + '/' + file.name, file)
-        data = {"file_name": "test" + '/' + file.name}
+        default_storage.save("images" + '/input/' + file.name, file)
+        data = {"url": "images" + '/input/' + file.name}
         result = MongoDbManager().add_user_on_collection(data)
+        
+        """
+            이 부분에 Model image 입력하는 코드 작성
+        """
+        
         return HttpResponse(status=201) if result else HttpResponse(status=500)
