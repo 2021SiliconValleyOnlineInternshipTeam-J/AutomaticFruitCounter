@@ -180,6 +180,9 @@ fabric.properties
 # ignore MongoDB Folder
 mongo/
 
+# OSX
+.DS_Store
+
 # ignore .idea
 .idea
 
