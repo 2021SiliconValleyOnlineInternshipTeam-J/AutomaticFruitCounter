@@ -252,3 +252,6 @@ __pycache__/
 # 3D Images
 *.3dm
 *.max
+
+#build
+build/
