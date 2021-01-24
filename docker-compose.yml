@@ -1,15 +1,15 @@
 version: '3'
 services:
-#  nginx:
-#    image: nginx:latest
-#    ports:
-#      - "80:80"
-#    volumes:
-#      - ./nginx/nginx-proxy.conf:/etc/nginx/conf.d/default.conf:ro
-#      - ./front_end/build:/var/www/front_end
-#    depends_on:
-#      - backend
-#      - frontend
+  nginx:
+    image: nginx:latest
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx/nginx-proxy.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./front_end/build:/var/www/front_end
+    depends_on:
+      - backend
+      - frontend
   mongo_db:
     image: mongo:latest
     restart: unless-stopped
@@ -19,7 +19,7 @@ services:
       - "27017:27017"
   backend:
     build: ./back_end
-#    command: gunicorn config.wsgi:application --bind 0.0.0.0:8000
+    command: gunicorn config.wsgi:application --bind 0.0.0.0:8000
     volumes:
       - ./back_end:/app
     ports:
@@ -33,4 +33,4 @@ services:
       - '/app/node_modules'
     ports:
       - "3000:3000"
-
+    stdin_open: true
