@@ -42,3 +42,7 @@
 Link {
   text-decoration: 'none';
 }
+
+html {
+  height: 100%;
+}
