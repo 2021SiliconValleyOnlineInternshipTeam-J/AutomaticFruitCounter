@@ -19,7 +19,7 @@ def testapi(request):
 
         file = request.FILES['image']
         now = datetime.datetime.now()
-        default_storage.save("images" + '/input/' + now.strftime('_%Y_%m_%d_%H') + file.name, file)
+        default_storage.save("images" + '/input/' + now.strftime('%Y_%m_%d_%H_') + file.name, file)
         data = {"url": "images" + '/input/' + now.strftime('%Y_%m_%d_%H_') + file.name}
         result = MongoDbManager().add_user_on_collection(data)
         
