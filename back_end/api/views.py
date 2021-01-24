@@ -6,6 +6,7 @@ from api.models import MongoDbManager
 # from api.detect import Bill
 import gridfs
 import json
+import datetime
 
 @csrf_exempt
 def testapi(request):
@@ -17,8 +18,9 @@ def testapi(request):
             return HttpResponse(status=400)
 
         file = request.FILES['image']
-        default_storage.save("images" + '/input/' + file.name, file)
-        data = {"url": "images" + '/input/' + file.name}
+        now = datetime.datetime.now()
+        default_storage.save("images" + '/input/' + now.strftime('_%Y_%m_%d_%H') + file.name, file)
+        data = {"url": "images" + '/input/' + now.strftime('%Y_%m_%d_%H_') + file.name}
         result = MongoDbManager().add_user_on_collection(data)
         
         """
