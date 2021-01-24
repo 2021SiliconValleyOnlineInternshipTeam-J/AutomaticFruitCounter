@@ -14,9 +14,9 @@ const Home = ( { history } ) => {
     const button_style = {
         backgroundColor: '#FFE32C',
         color: 'white',
-        width: '160px',
-        fontSize: '40px',
-        borderRadius: '12px',
+        width: '23.2%',
+        fontSize: '3em',
+        borderRadius: '32px',
         marginTop: '10%',
         display: 'inline-block',
         // position: 'absolute', left: '50%', buttom: '100%',
@@ -28,7 +28,7 @@ const Home = ( { history } ) => {
     return (
         <div style={parent_div}>
             <div style={title_style}>
-                <span style={{fontSize: '100px', color: '#FFE32C'}}>셀프 </span><span style={{fontSize: '100px', color: '#939393'}}>과일 계산대</span>
+                <span style={{fontSize: '6em', color: '#FFE32C'}}>셀프 </span><span style={{fontSize: '6em', color: '#939393'}}>과일 계산대</span>
             </div>
             <Link to='/selectupload'><div style={button_style}>시작하기</div></Link>
             {/* <div style={button_style} onClick={ () => {history.push("/selectupload")}}>시작하기</div> */}
