@@ -1,40 +1,40 @@
-# import cv2
-# import pickle
-# import numpy as np
-#
-#
-# # 상품 가격 정보 관리
-# class Bill:
-#     def __init__(self, price_path):
-#         self.__price_path = price_path
-#         with open(self.__price_path, "rb") as f:
-#             self.__price = pickle.load(f)
-#
-#     # 단일 상품 가격 반환, 등록이 안된 상품의 경우 False 반환
-#     def get_price(self, item):
-#         return self.__price[item] if item in self.__price else False
-#
-#     # 등록된 전체 상품 가격 반환
-#     def get_prices(self):
-#         return self.__price
-#
-#     # 상품 가격 설정
-#     def set_price(self, item, price):
-#         self.__price[item] = price
-#         self.save_price()
-#
-#     # 등록된 상품 삭제
-#     def del_product(self, item):
-#         if item in self.__price:
-#             del(self.__price[item])
-#         self.save_price()
-#
-#     # 상품 가격 dic을 바이너리 파일로 저장
-#     def save_price(self):
-#         with open(self.__price_path, "wb") as f:
-#             pickle.dump(self.__price, f)
-#
-#
+import cv2
+import pickle
+import numpy as np
+
+
+# 상품 가격 정보 관리
+class Bill:
+    def __init__(self, price_path):
+        self.__price_path = price_path
+        with open(self.__price_path, "rb") as f:
+            self.__price = pickle.load(f)
+
+    # 단일 상품 가격 반환, 등록이 안된 상품의 경우 False 반환
+    def get_price(self, item):
+        return self.__price[item] if item in self.__price else False
+
+    # 등록된 전체 상품 가격 반환
+    def get_prices(self):
+        return self.__price
+
+    # 상품 가격 설정
+    def set_price(self, item, price):
+        self.__price[item] = price
+        self.save_price()
+
+    # 등록된 상품 삭제
+    def del_product(self, item):
+        if item in self.__price:
+            del(self.__price[item])
+        self.save_price()
+
+    # 상품 가격 dic을 바이너리 파일로 저장
+    def save_price(self):
+        with open(self.__price_path, "wb") as f:
+            pickle.dump(self.__price, f)
+
+
 # # 이미지에서 객체 검출
 # class YOLO:
 #     def __init__(self, weights_path, cfg_path, names_path):
@@ -128,3 +128,15 @@
 #         print(item, items[item], bill.get_price(item), items[item] * bill.get_price(item))
 #
 #     cv2.imwrite("./images/Output_fruit.jpg", frame)
+
+
+class YOLO:
+    def __init__(self, weights_path, cfg_path, names_path):
+        pass
+
+    # 객체 검출 결과 이미지와 검출된 객체 갯수를 dic으로 반환
+    def detect(self, frame, size, score_threshold, nms_threshold):
+        cv2.rectangle(frame, (0, 0), (400, 60), (0, 255, 255), -1)
+        cv2.putText(frame, "OUTPUT IMAGE", (20, 40), cv2.FONT_HERSHEY_COMPLEX_SMALL, 2, (0, 0, 0),3)
+        items = {"apple": 1, "pineapple": 3, "peach": 5, "kiwi": 23, "watermelon": 1}
+        return frame, items
