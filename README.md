@@ -1,5 +1,6 @@
 # Fruit Billing
 
+-   Automatic fruit counter is web projects that classify and automatically calculate fruits.
 
 ## [](https://github.com/shpark76/docker-demo#docker-prerequisites)Docker Prerequisites:
 
