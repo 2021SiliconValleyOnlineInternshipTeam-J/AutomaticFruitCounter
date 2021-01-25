@@ -7,13 +7,13 @@ import { Link } from "react-router-dom";
 
 const LastPage = () => {
     const thanks_div = {
-        fontSize: '100px',
+        fontSize: '600%',
         color: '#FFE32C',
-        padding: '40px'
+        padding: '3%'
     }
     const result_div = {
-        fontSize: '55px',
-        padding:'10px'
+        fontSize: '330%',
+        padding:'1%'
     }
     return (
         <div style={{textAlign:'center'}}>
