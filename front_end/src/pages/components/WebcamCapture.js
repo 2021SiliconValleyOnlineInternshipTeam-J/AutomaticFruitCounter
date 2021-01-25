@@ -30,12 +30,13 @@ const WebcamCapture = () => {
 
   return (
       <div style={parent_div}>
-          <div style={{fontSize: '55px', color: '#000000',padding:'60px'}}>실시간 카메라</div>
+          <div style={{fontSize: '55px', color: '#000000',padding:'5%'}}>실시간 카메라</div>
           <>
           <Webcam
-            audio={false}
-            ref={webcamRef}
-            screenshotFormat="image/jpeg"
+              width="40%"
+              audio={false}
+              ref={webcamRef}
+              screenshotFormat="image/jpeg"
           />
           </>
       </div>
