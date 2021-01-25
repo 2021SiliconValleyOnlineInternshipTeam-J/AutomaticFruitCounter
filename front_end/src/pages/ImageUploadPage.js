@@ -9,6 +9,7 @@ const ImageUpload = ( { history } ) => {
     const [percentage, setPercentage] = useState(0);
     const [preview, setPreview] = useState(null);
     const [enableDragDrop, setEnableDragDrop] = useState(true);
+    const [image, setImage] = useState(true);
     const doNothing = event => event.preventDefault();
 
     const btn_div = {
@@ -71,15 +72,19 @@ const ImageUpload = ( { history } ) => {
             const reader = new FileReader();
             reader.onload = e => setPreview(e.target.result);
             reader.readAsDataURL(event.dataTransfer.files[0]);
-            const payload = new FormData();
-            payload.append('image', event.dataTransfer.files[0]);
-            console.log(event.dataTransfer.files[0])
-            const xhr = new XMLHttpRequest();
-            xhr.open('POST', 'http://localhost:8000/api/addimage/');
-            xhr.send(payload);
+            setImage(event.dataTransfer.files[0])
         }
         event.preventDefault();
     };
+
+    const RequestImage = () => {
+        const payload = new FormData();
+        payload.append('image', image);
+        console.log(image)
+        const xhr = new XMLHttpRequest();
+        xhr.open('POST', 'http://localhost:8000/api/addimage/');
+        xhr.send(payload);
+    }
 
     return (
     <div style={{textAlign:'center'}}>
@@ -100,7 +105,7 @@ const ImageUpload = ( { history } ) => {
 
         <div style={{btn_div}}>
             <Link to='/selectupload'><div className='gray_button'>이전으로</div></Link>
-            <Link to='/result'><div className='yellow_button'>다음으로</div></Link>
+            <Link to='/result' onClick={RequestImage}><div className='yellow_button'>다음으로</div></Link>
         </div>
     </div>
     );
