@@ -17,17 +17,6 @@ const WebcamCapture = () => {
         textAlign: 'center',
     }
 
-  const button_style = {
-      backgroundColor: '#FFE32C',
-      color: 'white',
-      width: '273px',
-      height:'81px',
-      fontSize: '45px/65px',
-      borderRadius: '38px',
-      margin:'1%',
-      padding:'1%',
-    }
-
   return (
       <div style={parent_div}>
           <div style={{fontSize: '55px', color: '#000000',padding:'60px'}}>실시간 카메라</div>

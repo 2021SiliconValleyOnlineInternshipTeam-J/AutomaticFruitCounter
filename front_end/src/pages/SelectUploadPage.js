@@ -31,7 +31,6 @@ const SelectUploadPage = ( { history } ) => {
             <div style={btn_div}>
                 <Link to='/'><div className='gray_button'>이전으로</div></Link>
             </div>      
-            {/*<div style={home_btn} onClick={ () => {history.push("/")}}>이전으로</div>*/}
         </div>
     );
 };
