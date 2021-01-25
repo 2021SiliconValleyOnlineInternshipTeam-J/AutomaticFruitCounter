@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter, Route, Link } from 'react-router-dom'; //React-Router import
+import { BrowserRouter, Route } from 'react-router-dom'; //React-Router import
 // import pages
 import Home from './pages/Home'
 import SelectUploadPage from './pages/SelectUploadPage'
