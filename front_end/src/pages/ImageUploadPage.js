@@ -13,7 +13,7 @@ const ImageUpload = ( { history } ) => {
     const doNothing = event => event.preventDefault();
 
     const btn_div = {
-        padding:'40px',
+        padding:'3%',
         textAlign: 'center'
     }
 
@@ -64,7 +64,7 @@ const ImageUpload = ( { history } ) => {
     return (
     <div style={{textAlign:'center'}}>
         <TopNavigator/>
-        <div style={{fontSize: '45px', color: '#000000',padding:'5%', textAlign:'center'}}>계산할 사진 업로드</div>
+        <div style={{fontSize: '2.5em', color: '#000000',padding:'1%', textAlign:'center'}}>계산할 사진 업로드</div>
         <div onDragEnter={onDragEnter} onDragLeave={onDragLeave} onDragOver={doNothing} onDrop={onDragLeave}>
 
             </div>
