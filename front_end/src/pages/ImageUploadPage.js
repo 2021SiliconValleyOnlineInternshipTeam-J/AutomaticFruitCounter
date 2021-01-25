@@ -16,31 +16,6 @@ const ImageUpload = ( { history } ) => {
         padding:'40px',
         textAlign: 'center'
     }
-    const parent_div = {
-        width: '100%',
-        height: '100%',
-        textAlign: 'center',
-    }
-
-    const box = {
-        width: '730px',
-        height: '431px',
-        background: '#F8F8F8',
-        border: '5px solid #D6D6D6',
-        opacity: '1',
-        position: 'absolute', left: '50%', top: '50%',
-        transform: 'translate(-50%, -50%)',
-        display:'table',
-        fontSize:'40px/58px',
-
-    }
-
-    const box_text={
-        display:'table-cell',
-        verticalAlign:'middle',
-        fontSize:'40px/58px',
-        color: '#939393'
-    }
 
     const onDragEnter = event => {
         if (enableDragDrop) {
@@ -89,7 +64,7 @@ const ImageUpload = ( { history } ) => {
     return (
     <div style={{textAlign:'center'}}>
         <TopNavigator/>
-        <div style={{fontSize: '45px', color: '#000000',padding:'0px', textAlign:'center'}}>계산할 사진 업로드</div>
+        <div style={{fontSize: '45px', color: '#000000',padding:'5%', textAlign:'center'}}>계산할 사진 업로드</div>
         <div onDragEnter={onDragEnter} onDragLeave={onDragLeave} onDragOver={doNothing} onDrop={onDragLeave}>
 
             </div>
