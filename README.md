@@ -1,6 +1,5 @@
 # Fruit Billing
 
----
 
 ## [](https://github.com/shpark76/docker-demo#docker-prerequisites)Docker Prerequisites:
 
