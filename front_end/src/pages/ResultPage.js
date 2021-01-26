@@ -15,6 +15,7 @@ const table_div = {
   width: "60%",
   display: "inline-block",
   borderRadius: "38px",
+  padding:"3%"
 };
 const img_div = {
   height: "100%",
