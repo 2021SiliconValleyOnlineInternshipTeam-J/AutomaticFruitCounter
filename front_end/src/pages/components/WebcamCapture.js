@@ -7,6 +7,7 @@ const WebcamCapture = () => {
     const [imgSrc, setImgSrc] = React.useState(null);
     const capture = () => {
         const imageSrc = webcamRef.current.getScreenshot();
+        console.log(imageSrc)
         setImgSrc(imageSrc);
         const byteString = atob(imageSrc.split(",")[1]);
         const ab = new ArrayBuffer(byteString.length);

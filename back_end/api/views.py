@@ -1,6 +1,6 @@
 from django.core.files.storage import default_storage
 from django.views.decorators.csrf import csrf_exempt
-from django.http import HttpResponse
+from django.http import HttpResponse, JsonResponse
 from .models import MongoDbManager
 from .detect import YOLO
 from .detect import Bill
@@ -9,6 +9,7 @@ import json
 import datetime
 import cv2
 import os
+import base64
 
 
 @csrf_exempt
@@ -48,4 +49,7 @@ def testapi(request):
         model = YOLO(WEIGHTS_PATH, CFG_PATH, NAMES_PATH)
         frame, items = model.detect(frame=src, size=SIZE, score_threshold=SCORE_THRESHOLD, nms_threshold=NMS_THRESHOLD)
         cv2.imwrite(OUTPUT_PATH + file_name, frame)
-        return HttpResponse(status=201) if result else HttpResponse(status=500)
+        with open(OUTPUT_PATH + file_name, "rb") as image_file:
+            encoded_string = base64.b64encode(image_file.read())
+        items['url'] = encoded_string.decode("UTF-8")
+        return JsonResponse(json.dumps(items), safe=False) if result else HttpResponse(status=500)

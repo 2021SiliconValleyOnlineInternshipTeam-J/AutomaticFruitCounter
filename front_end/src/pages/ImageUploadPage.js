@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useCallback } from "react";
 import "./ImageUploadCSS.css";
 import { Link } from "react-router-dom";
 import TopNavigator from "./components/TopNavigator";
 import "./components/Buttons.css";
+import axios from "axios";
 
 const ImageUpload = ({ history }) => {
   const [status, setStatus] = useState("업로드할 파일을 드래그 해주세요");
@@ -10,7 +11,10 @@ const ImageUpload = ({ history }) => {
   const [preview, setPreview] = useState(null);
   const [enableDragDrop, setEnableDragDrop] = useState(true);
   const [image, setImage] = useState(true);
+  const [isSending, setIsSending] = useState(true);
+  const [imgSrc, setImgSrc] = useState(null);
   const doNothing = (event) => event.preventDefault();
+
 
   const btn_div = {
     padding: "3%",
@@ -60,6 +64,20 @@ const ImageUpload = ({ history }) => {
     xhr.send(payload);
   };
 
+  // const TestRequest = () => {
+  //   let form_data = new FormData();
+  //   form_data.append("image", image);
+  //   let url = 'http://localhost:8000/api/addimage/';
+  //   axios.post(url, form_data, {
+  //     headers: {
+  //       'content-type': 'multipart/form-data'
+  //     }
+  //   }).then(res => {
+  //         const data = JSON.parse(res.data);
+  //         setImgSrc("data:image/jpeg;base64," + data.url)
+  //   }).catch(err => console.log(err))
+  // };
+
   return (
     <div style={{ textAlign: "center" }}>
       <TopNavigator />
@@ -99,8 +117,9 @@ const ImageUpload = ({ history }) => {
           <div className="Status">{status}</div>
         </div>
       </div>
-
       <div style={{ btn_div }}>
+        {/*<button onClick={TestRequest}>테스트</button>*/}
+        {/*{imgSrc && (<img src={imgSrc} />)}*/}
         <Link to="/selectupload">
           <div className="gray_button">이전으로</div>
         </Link>
