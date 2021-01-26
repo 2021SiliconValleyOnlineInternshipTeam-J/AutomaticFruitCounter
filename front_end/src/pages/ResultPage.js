@@ -80,7 +80,7 @@ class Table extends React.Component {
         return <FruitField fruit={fruit} key={i} />;
       });
     };
-    return <div>{mapToComponent(this.state.bill)}</div>;
+    return <tbody>{mapToComponent(this.state.bill)}</tbody>;
   }
 }
 
@@ -115,7 +115,7 @@ class ResultPage extends Component {
             <Table />
             <tfoot>
               <tr>
-                <td colSpan="2">총액</td>
+                <td colSpan="1">총액</td>
                 <td></td>
                 <td className="amount">{this.state.amount}</td>
               </tr>
