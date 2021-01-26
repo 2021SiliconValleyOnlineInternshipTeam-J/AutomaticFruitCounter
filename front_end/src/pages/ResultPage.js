@@ -143,5 +143,5 @@ class ResultPage extends Component {
     );
   }
 }
-export default ResultPage;
 
+export default ResultPage;
