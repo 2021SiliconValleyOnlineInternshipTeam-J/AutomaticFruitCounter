@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./components/Buttons.css";
 import TopNavigator from "./components/TopNavigator";
 import "./ResultPage.css";
-//import result_image from "./logo512.png"; //test용 이미지 대입
+//import result_image from "./logo512.png"; //test용 이미지 대입
 // import { JsonToTable } from "react-json-to-table";
 //style
 const q_div = {
@@ -35,42 +35,44 @@ class Table extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      // bill : [ //test용 bill
-      //   {
-      //     name: "apple",
-      //     num : 1,
-      //     total : 1000,
-      //   },
-      //   {
-      //     name: "pineapple",
-      //     num : 3,
-      //     total : 2000,
-      //   },
-      //   {
-      //     name: "peach",
-      //     num : 5,
-      //     total : 3000,
-      //   },
-      //   {
-      //     name: "kiwi",
-      //     num : 23,
-      //     total : 10000,
-      //   },
-      //   {
-      //     name: "watermelon",
-      //     num: 1,
-      //     total : 10000,
-      //   }
-      // ],
       bill: [
+        //test용 bill
         {
           name: "apple",
           num: 1,
           total: 1000,
         },
+        {
+          name: "pineapple",
+          num: 3,
+          total: 2000,
+        },
+        {
+          name: "peach",
+          num: 5,
+          total: 3000,
+        },
+        {
+          name: "kiwi",
+          num: 23,
+          total: 10000,
+        },
+        {
+          name: "watermelon",
+          num: 1,
+          total: 10000,
+        },
       ],
+      // bill: [
+      //   {
+      //     name: "apple",
+      //     num: 1,
+      //     total: 1000,
+      //   },
+      // ],
     };
   } //json받기 //this.setState + axios 이용
+
   render() {
     // key 부여
     const mapToComponent = (data) => {
@@ -102,7 +104,7 @@ class ResultPage extends Component {
           <span>{this.state.amount}원</span>을 결제하시겠습니까?    
         </div>
         <div style={table_div}>
-          <table style={{ fontSize: "150%", display: "inline-block" }}>    
+          <table style={{ fontSize: "150%", display: "inline-block" }}>
             <thead>
               <tr>
                 <th>상품명</th>
@@ -110,7 +112,7 @@ class ResultPage extends Component {
                 <th>금액</th>  
               </tr>
             </thead>
-              <Table />
+            <Table />
             <tfoot>
               <tr>
                 <td colSpan="2">총액</td>
@@ -125,7 +127,7 @@ class ResultPage extends Component {
             <div className="gray_button">취소하기</div>
           </Link>
           <Link to="/end">
-            <div className="yellow_button">결제하기</div>          
+            <div className="yellow_button">결제하기</div>
           </Link>
         </div>
       </div>
