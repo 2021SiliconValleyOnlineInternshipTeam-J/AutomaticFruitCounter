@@ -31,27 +31,21 @@ def testapi(request):
         """
             이 부분에 Model image 입력하는 코드 작성
         """
-        WEIGHTS_PATH = "bin/fruit.weights"
-        CFG_PATH = "bin/fruit.cfg"
-        NAMES_PATH = "bin/fruit.names"
-        SRC_PATH = "../images/input/"
+        WEIGHTS_PATH = "bin/fruit.pt"
         PRICE_PATH = "bin/fruit.bill"
+        SRC_PATH = "../images/input/"
         OUTPUT_PATH = "../images/output/output_"
-
-        size_list = [320, 416, 608]
-        SIZE = size_list[2]
-        SCORE_THRESHOLD = 0.1
-        NMS_THRESHOLD = 0.4
 
         os.chdir("/app/api")
         src = cv2.imread(SRC_PATH + file_name)
 
-        model = YOLO(WEIGHTS_PATH, CFG_PATH, NAMES_PATH)
+        model = YOLO(WEIGHTS_PATH)
         bill = Bill(PRICE_PATH)
-        frame, items = model.detect(frame=src, size=SIZE, score_threshold=SCORE_THRESHOLD, nms_threshold=NMS_THRESHOLD)
+        frame, items = model.detect(frame=src)
         cv2.imwrite(OUTPUT_PATH + file_name, frame)
-        for key in items.keys():
-            items[key] = [items[key], bill.get_price(key)]
+        bill.add_price_info(items)
+        print(items)
+        
         with open(OUTPUT_PATH + file_name, "rb") as image_file:
             encoded_string = base64.b64encode(image_file.read())
         items['url'] = encoded_string.decode("UTF-8")
