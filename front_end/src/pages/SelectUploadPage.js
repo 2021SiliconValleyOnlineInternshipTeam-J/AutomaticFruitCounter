@@ -5,15 +5,6 @@ import "./components/Buttons.css";
 import "./SelectUploadPage.css";
 
 const SelectUploadPage = ({ history }) => {
-  const select_btn = {
-    borderRadius: "12px",
-    fontSize: "3rem",
-    display: "block",
-    padding: "30% 2%",
-    margin: "3%",
-    border: "4px solid #ffe32c7a",
-    color: "#ffe32c7a",
-  };
 
   const btn_div = {
     padding: "3%",
