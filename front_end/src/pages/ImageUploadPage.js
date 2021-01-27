@@ -59,15 +59,15 @@ const ImageUpload = () => {
     payload.append("image", image);
     console.log(image);
     const xhr = new XMLHttpRequest();
-    xhr.open("POST", "http://localhost:8000/api/addimage/");
+    xhr.open("POST", "/api/addimage/");
     xhr.send(payload);
   };
 
   const TestRequest = () => {
     let form_data = new FormData();
     form_data.append("image", image);
-    //let url = 'http://localhost:8000/api/addimage/';      기존 코드 
-    let url = 'http://localhost:80/api/addimage/';     //   nginx 설정 : let url = '/api/addimage/' 도 가능
+    //let url = 'http://localhost:8000/api/addimage/';     //   backend와 직접 통신하는 코드, 배포할 때는 밑에 방법으로!
+    let url = '/api/addimage/';                            //   local에서 개발할 때  let url = 'http://localhost:80/api/addimage/' 도 가능
     axios.post(url, form_data, {
       headers: {
         'content-type': 'multipart/form-data'
