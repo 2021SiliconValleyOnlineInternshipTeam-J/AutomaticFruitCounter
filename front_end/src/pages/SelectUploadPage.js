@@ -2,13 +2,14 @@ import React from "react";
 import TopNavigator from "./components/TopNavigator";
 import { Link } from "react-router-dom";
 import "./components/Buttons.css";
+import "./SelectUploadPage.css";
 
 const SelectUploadPage = ({ history }) => {
   const select_btn = {
     borderRadius: "12px",
-    fontSize: "300%",
-    display: "inline",
-    padding: "4% 2%",
+    fontSize: "3rem",
+    display: "block",
+    padding: "30% 2%",
     margin: "3%",
     border: "4px solid #ffe32c7a",
     color: "#ffe32c7a",
@@ -21,18 +22,23 @@ const SelectUploadPage = ({ history }) => {
   return (
     <div style={{ textAlign: "center", width: "100%" }}>
       <TopNavigator />
-      <div style={{ fontSize: "300%", padding: "2%", margin: "3%" }}>
-        계산 방식을 선택해주세요.
+      <div style={{ fontSize: "2.5rem", paddingTop: "1.5%"}}>
+        계산 방식
       </div>
-      <div>
-        <Link to="/imageupload" style={{ textDecoration: "none" }}>
-          <div style={select_btn}>사진 업로드</div>
-        </Link>
-        <Link to="/webcam" style={{ textDecoration: "none" }}>
-          <div style={select_btn}>실시간 카메라</div>
-        </Link>
+      <div style={{ fontSize: "1.3rem", color:"gray", paddingTop: "1%"}}>
+        과일을 계산할 방식을 선택해 주세요
       </div>
-      <div style={btn_div}>
+
+                    <Link to="/imageupload" style={{ textDecoration: "none" }}>
+                    <div class="select_button">사진 업로드</div>
+                </Link>
+
+                    <Link to="/webcam" style={{ textDecoration: "none" }}>
+                        <div class="select_button">실시간 카메라</div>
+                    </Link>
+
+
+      <div style={btn_div} style={{paddingTop:"2%"}}>
         <Link to="/">
           <div className="gray_button">이전으로</div>
         </Link>

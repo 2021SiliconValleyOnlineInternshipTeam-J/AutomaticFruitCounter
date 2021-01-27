@@ -1,0 +1,16 @@
+.select_button {
+    border-radius: 20px;
+    font-size: 200%;
+    display: block;
+    padding: 6% 2%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top : 2%;
+    border: 4px solid #ffe32c7a;
+    color: #ffe32c7a;
+}
+
+.select_button:hover {
+  background: linear-gradient(to right, rgb(255, 226, 89), rgb(255, 204, 81));
+  color: white;
+}
