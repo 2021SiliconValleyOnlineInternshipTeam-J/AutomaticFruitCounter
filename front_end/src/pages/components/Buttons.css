@@ -1,21 +1,31 @@
 .gray_button {
-    border-radius: 38px;
-    font-size: 2.25em;
-    color: white;
-    display: inline-block;
-    width: 12%;
-    background: #999A9C 0% 0% no-repeat padding-box;
-    margin: 3%;
-    padding: 0.7%;
+  border-radius: 8px;
+  font-size: 130%;
+  color: slategray;
+  border: 1px solid slategray;
+  display: inline-block;
+  width: 12%;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  margin: 2%;
+  padding: 0.65%;
+}
+
+.gray_button:hover {
+  background: linear-gradient(to right, #485563, #29323c);
+  color: white;
 }
 
 .yellow_button {
-    border-radius: 38px;
-    font-size: 2.25em;
-    color: white;
-    display: inline-block;
-    width: 12%;
-    background: #FFDD00 0% 0% no-repeat padding-box;
-    margin: 3%;
-    padding: 0.7%;
+  border-radius: 8px;
+  font-size: 130%;
+  color: white;
+  display: inline-block;
+  width: 12%;
+  background: linear-gradient(to right, rgb(255, 226, 89), rgb(255, 204, 81));
+  margin: 2%;
+  padding: 0.7%;
+}
+
+.yellow_button:hover {
+  background: linear-gradient(to left, rgb(255, 226, 89), rgb(255, 204, 81));
 }

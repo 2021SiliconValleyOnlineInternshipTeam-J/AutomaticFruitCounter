@@ -35,7 +35,7 @@ const WebcamCapture = () => {
 
   return (
       <div style={parent_div}>
-          <div style={{fontSize: '55px', color: '#000000',padding:'5%'}}>실시간 카메라</div>
+          <div style={{fontSize: '2.5rem', color: '#000000',padding:'3%'}}>실시간 카메라</div>
           <>
           <Webcam
               width="40%"

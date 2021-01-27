@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap");
 
 .App {
-  font-family: "Do Hyeon";
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 .App-logo {
@@ -40,7 +40,7 @@
 }
 
 Link {
-  text-decoration: 'none';
+  text-decoration: "none";
 }
 
 html {
