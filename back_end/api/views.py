@@ -47,8 +47,11 @@ def testapi(request):
         src = cv2.imread(SRC_PATH + file_name)
 
         model = YOLO(WEIGHTS_PATH, CFG_PATH, NAMES_PATH)
+        bill = Bill(PRICE_PATH)
         frame, items = model.detect(frame=src, size=SIZE, score_threshold=SCORE_THRESHOLD, nms_threshold=NMS_THRESHOLD)
         cv2.imwrite(OUTPUT_PATH + file_name, frame)
+        for key in items.keys():
+            items[key] = [items[key], bill.get_price(key)]
         with open(OUTPUT_PATH + file_name, "rb") as image_file:
             encoded_string = base64.b64encode(image_file.read())
         items['url'] = encoded_string.decode("UTF-8")
