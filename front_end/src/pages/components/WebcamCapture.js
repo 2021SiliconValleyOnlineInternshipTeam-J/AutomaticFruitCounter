@@ -35,19 +35,17 @@ const WebcamCapture = () => {
 
   return (
       <div style={parent_div}>
-          <div style={{fontSize: '2.5rem', color: '#000000',paddingTop:'1.5%'}}>실시간 카메라</div>
-          <div style={{fontSize: '1rem', color: "gray",padding:'1%'}}>화면에 계산할 물건이 모두 보이도록 하고 결제하기를 눌러주세요</div>
+          <div style={{fontSize: '2.5rem', color: '#000000',paddingTop:'3%'}}>실시간 카메라</div>
+          <div style={{fontSize: '1rem', color: "gray",paddingTop:'1%',paddingBottom:'3%'}}>화면에 계산할 물건이 모두 보이도록 하고 결제하기를 눌러주세요</div>
           <>
           <Webcam
-              border-radius="20px"
-              width="50%"
+              width="40%"
               audio={false}
               ref={webcamRef}
               screenshotFormat="image/jpeg"
-              paddingBottom="1%"
           />
           </>
-          <div>
+          <div style={{paddingTop:'2%'}}>
               <Link to="/selectupload">
                   <div className="gray_button">취소하기</div>
               </Link>

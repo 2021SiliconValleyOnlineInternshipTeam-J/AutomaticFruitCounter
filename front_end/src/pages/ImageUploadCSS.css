@@ -1,4 +1,5 @@
 .ImageCenter {
+  margin-top:1.5%;
   background-size: cover;
   display: flex;
   align-items: center;
@@ -51,13 +52,13 @@
   justify-content: center;
   width: calc(60vw - 60px);
   height: calc(50vh - 50px);
-  border: solid 40px transparent;
+  border: 2px dashed #DDD;
   transition: all 250ms ease-in-out 0s;
   position: relative;
 }
 
 .DropArea.Over {
-  border: solid 40px rgba(0, 0, 0, 0.2);
+  border: solid 20px rgba(0, 0, 0, 0.2);
 }
 
 .ImageProgress {
