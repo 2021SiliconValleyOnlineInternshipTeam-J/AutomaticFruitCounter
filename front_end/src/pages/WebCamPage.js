@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./components/Buttons.css";
 import TopNavigator from "./components/TopNavigator";
 import WebcamCapture from "./components/WebcamCapture";

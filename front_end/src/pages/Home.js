@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom"; //React-Router import
 
-const Home = ({ history }) => {
+const Home = () => {
   const parent_div = {
     width: "100%",
     height: "100%",

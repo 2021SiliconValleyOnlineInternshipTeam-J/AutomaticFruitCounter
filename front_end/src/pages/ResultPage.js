@@ -3,9 +3,8 @@ import { Link } from "react-router-dom";
 import "./components/Buttons.css";
 import TopNavigator from "./components/TopNavigator";
 import "./ResultPage.css";
-//import result_image from "./logo512.png"; //test용 이미지 대입
-// import { JsonToTable } from "react-json-to-table";
-//style
+
+
 const q_div = {
   fontSize: "200%",
 };
