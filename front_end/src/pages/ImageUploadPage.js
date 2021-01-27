@@ -4,9 +4,8 @@ import { Link } from "react-router-dom";
 import TopNavigator from "./components/TopNavigator";
 import "./components/Buttons.css";
 
-const ImageUpload = ({ history }) => {
+const ImageUpload = () => {
   const [status, setStatus] = useState("업로드할 파일을 드래그 해주세요");
-  const [percentage, setPercentage] = useState(0);
   const [preview, setPreview] = useState(null);
   const [enableDragDrop, setEnableDragDrop] = useState(true);
   const [image, setImage] = useState(true);
