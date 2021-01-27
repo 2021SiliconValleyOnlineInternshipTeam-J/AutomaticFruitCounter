@@ -6,7 +6,7 @@
   display: inline-block;
   width: 12%;
   background: #ffffff 0% 0% no-repeat padding-box;
-  margin: 2%;
+  margin: 1%;
   padding: 0.65%;
 }
 
@@ -22,7 +22,7 @@
   display: inline-block;
   width: 12%;
   background: linear-gradient(to right, rgb(255, 226, 89), rgb(255, 204, 81));
-  margin: 2%;
+  margin: 1%;
   padding: 0.7%;
 }
 
