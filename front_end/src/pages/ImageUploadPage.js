@@ -64,19 +64,21 @@ const ImageUpload = ({ history }) => {
     xhr.send(payload);
   };
 
-  // const TestRequest = () => {
-  //   let form_data = new FormData();
-  //   form_data.append("image", image);
-  //   let url = 'http://localhost:8000/api/addimage/';
-  //   axios.post(url, form_data, {
-  //     headers: {
-  //       'content-type': 'multipart/form-data'
-  //     }
-  //   }).then(res => {
-  //         const data = JSON.parse(res.data);
-  //         setImgSrc("data:image/jpeg;base64," + data.url)
-  //   }).catch(err => console.log(err))
-  // };
+  const TestRequest = () => {
+    let form_data = new FormData();
+    form_data.append("image", image);
+    //let url = 'http://localhost:8000/api/addimage/';      기존 코드 
+    let url = 'http://localhost:80/api/addimage/';     //   nginx 설정
+    axios.post(url, form_data, {
+      headers: {
+        'content-type': 'multipart/form-data'
+      }
+    }).then(res => {
+          console.log(res.data)
+          const data = JSON.parse(res.data);
+          setImgSrc("data:image/jpeg;base64," + data.url)
+    }).catch(err => console.log(err))
+  };
 
   return (
     <div style={{ textAlign: "center" }}>
@@ -118,8 +120,8 @@ const ImageUpload = ({ history }) => {
         </div>
       </div>
       <div style={{ btn_div }}>
-        {/*<button onClick={TestRequest}>테스트</button>*/}
-        {/*{imgSrc && (<img src={imgSrc} />)}*/}
+        <button onClick={TestRequest}>테스트</button>
+        {imgSrc && (<img src={imgSrc} />)}
         <Link to="/selectupload">
           <div className="gray_button">이전으로</div>
         </Link>

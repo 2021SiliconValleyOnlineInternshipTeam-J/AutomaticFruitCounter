@@ -138,5 +138,5 @@ class YOLO:
     def detect(self, frame, size, score_threshold, nms_threshold):
         cv2.rectangle(frame, (0, 0), (400, 60), (0, 255, 255), -1)
         cv2.putText(frame, "OUTPUT IMAGE", (20, 40), cv2.FONT_HERSHEY_COMPLEX_SMALL, 2, (0, 0, 0),3)
-        items = {"apple": 1, "pineapple": 3, "peach": 5, "kiwi": 23, "watermelon": 1}
+        items = {"apple": [1, 1000], "pineapple": [3, 2000], "peach": [5, 3000], "kiwi": [23, 3000], "watermelon": [1, 10000]}
         return frame, items
