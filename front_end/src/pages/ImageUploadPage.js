@@ -68,7 +68,7 @@ const ImageUpload = ({ history }) => {
     let form_data = new FormData();
     form_data.append("image", image);
     //let url = 'http://localhost:8000/api/addimage/';      기존 코드 
-    let url = 'http://localhost:80/api/addimage/';     //   nginx 설정
+    let url = 'http://localhost:80/api/addimage/';     //   nginx 설정 : let url = '/api/addimage/' 도 가능
     axios.post(url, form_data, {
       headers: {
         'content-type': 'multipart/form-data'
