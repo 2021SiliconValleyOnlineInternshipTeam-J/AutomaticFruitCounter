@@ -42,7 +42,7 @@ class Bill:
 
 
 
-# # 이미지에서 객체 검출
+# 이미지에서 객체 검출
 class YOLO:
     def __init__(self, weights_path):
         self.__model = torch.hub.load('ultralytics/yolov5', 'custom', path_or_model=weights_path)
@@ -61,15 +61,22 @@ class YOLO:
         __colors = np.random.uniform(0, 255, size=(len(__result.names), 3))
         
         for item in __pred:
-            __x1, __y1, __x2, __y2 = list(map(int, item[0:4]))
+            __x1, __y1, __x2, __y2 = item[0:4]
+            __center_x = int(((__x1 + __x2) / 2) + 0.5)
+            __center_y = int(((__y1 + __y2) / 2) + 0.5)
+            __radius = int(max((__x2 - __x1), (__y2 - __y1)) / 2 + 0.5)
             __class_name = __result.names[int(item[-1])]
             items[__class_name] = items[__class_name] + 1 if __class_name in items else 1
 
             __label = f"{__class_name} {item[-2]:.2f}"
             __color = __colors[int(item[-1])]
 
-            cv2.rectangle(frame, (__x1, __y1), (__x2, __y2), __color, 2)
-            cv2.rectangle(frame, (__x1 - 1, __y1), (__x1 + len(__class_name) * 13 + 65, __y1 - 25), __color, -1)
-            cv2.putText(frame, __label, (__x1, __y1 - 8), cv2.FONT_HERSHEY_COMPLEX_SMALL, 1, (0, 0, 0), 2)
+            # 네모
+            # cv2.rectangle(frame, (__x1, __y1), (__x2, __y2), __color, 2)
+            # cv2.rectangle(frame, (__x1 - 1, __y1), (__x1 + len(__class_name) * 13 + 65, __y1 - 25), __color, -1)
+            # cv2.putText(frame, __label, (__x1, __y1 - 8), cv2.FONT_HERSHEY_COMPLEX_SMALL, 1, (0, 0, 0), 2)
+
+            # 원
+            cv2.circle(frame, (__center_x, __center_y), __radius, __color, 3)
 
         return frame, items
