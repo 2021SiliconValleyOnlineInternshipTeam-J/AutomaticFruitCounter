@@ -122,8 +122,7 @@ class ResultPage extends Component {
             <Table />
             <tfoot>
               <tr>
-                <td colSpan="1">총액</td>
-                <td></td>
+                <td colSpan="2">총액</td>
                 <td className="amount">{this.state.amount}</td>
               </tr>
             </tfoot>
