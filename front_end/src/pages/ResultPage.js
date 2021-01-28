@@ -4,9 +4,16 @@ import "./components/Buttons.css";
 import TopNavigator from "./components/TopNavigator";
 import "./ResultPage.css";
 
+const parent_div = {
+  width: "100%",
+  height: "100%",
+  textAlign: "center"
+};
 
 const q_div = {
-  fontSize: "200%",
+  fontSize: "2rem",
+  color: "gray",
+  paddingTop:"1%",
 };
 const table_div = {
   textAlign: "center",
@@ -97,19 +104,19 @@ class ResultPage extends Component {
       <div style={{ textAlign: "center" }}>
         <TopNavigator />
         <div style={img_div}>
-          <div style={{ fontSize: "200%", padding: "1%" }}>계산결과</div> 
+          <div style={{ fontSize: "2.5rem", paddingTop: "1.5%" }}>계산결과</div>
           <img src={this.state.image} style={{ height: "12em" }}></img>
         </div>
         <div style={q_div}>
-          <span>{this.state.amount}원</span>을 결제하시겠습니까?    
+          <span>{this.state.amount}원</span>을 결제하시겠습니까?
         </div>
         <div style={table_div}>
-          <table style={{ fontSize: "150%", display: "inline-block" }}>
+          <table style={{ fontSize: "1.3rem", display: "inline-block", border:"1px dashed #bcbcbc", padding: "2% 3%", borderRadius:"10px"}}>
             <thead>
               <tr>
                 <th>상품명</th>
                 <th>수량</th>
-                <th>금액</th>  
+                <th>금액</th>
               </tr>
             </thead>
             <Table />
