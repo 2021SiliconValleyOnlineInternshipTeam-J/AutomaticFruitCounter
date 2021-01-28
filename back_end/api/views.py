@@ -11,6 +11,8 @@ import cv2
 import os
 import base64
 
+WEIGHTS_PATH = "/app/api/bin/fruit.pt"
+model = YOLO(WEIGHTS_PATH)
 
 @csrf_exempt
 def testapi(request):
@@ -31,7 +33,6 @@ def testapi(request):
         """
             이 부분에 Model image 입력하는 코드 작성
         """
-        WEIGHTS_PATH = "bin/fruit.pt"
         PRICE_PATH = "bin/fruit.bill"
         SRC_PATH = "../images/input/"
         OUTPUT_PATH = "../images/output/output_"
@@ -39,7 +40,6 @@ def testapi(request):
         os.chdir("/app/api")
         src = cv2.imread(SRC_PATH + file_name)
 
-        model = YOLO(WEIGHTS_PATH)
         bill = Bill(PRICE_PATH)
         frame, items = model.detect(frame=src)
         cv2.imwrite(OUTPUT_PATH + file_name, frame)
