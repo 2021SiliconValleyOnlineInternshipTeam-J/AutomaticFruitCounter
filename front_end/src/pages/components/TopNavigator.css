@@ -13,3 +13,8 @@ header {
   max-width: 100%;
   margin: 0 auto;
 }
+
+.nav_logo{
+  width: 6%;
+  padding: 1% 2%;
+}
