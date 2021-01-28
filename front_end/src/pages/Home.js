@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom"; //React-Router import
 import './Home.css';
+import imgfile from './logo/logo.png';
 
 const Home = () => {
   const parent_div = {
@@ -15,7 +16,7 @@ const Home = () => {
   return (
       <div id="home">
         <div style={parent_div}>
-            <img className="logo" src="https://postfiles.pstatic.net/MjAyMTAxMjhfMTY3/MDAxNjExODE5NzU1MjY5.j6CM8WPeuQka8KlNCmD5LdZ66ZPC1oQdDVYdcrKqj3kg.0NsDAB8IqrvtaRpFqs57J6TN7ue7FwSaD7zxti8HW3cg.PNG.te04056/logo.png?type=w773"/>
+            <img className="logo" src={imgfile}/>
           <div style={title_style}>
             <div className="container2">
                 <span className="text1">편리한 쇼핑을 도와 주는</span>
