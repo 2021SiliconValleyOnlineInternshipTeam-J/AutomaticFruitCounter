@@ -1,4 +1,4 @@
-Background {
+background {
   width: 100%;
   height: 100%;
   background: linear-gradient(-45deg, #f7971e, #ffd200, #ff9966, #ff5e62);
@@ -70,4 +70,11 @@ Background {
 
 .title_yellow_button:hover {
   background: linear-gradient(to left, rgb(255, 226, 89), rgb(255, 204, 81));
+}
+
+.logo{
+  margin-top: 15%;
+  width: 2%;
+  height: 2%;
+  position: relative;
 }
