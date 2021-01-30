@@ -2,6 +2,18 @@
 
 -   Automatic fruit counter is web projects that classify and automatically calculate fruits.
 
+## 🍒font_end
+### 🍍Design
+  [🖍Design Document](https://xd.adobe.com/view/980f8ffe-b676-4f75-bbe6-05a832d6b508-cd5c/)    
+  
+### 🍍Structure
+  🍏 [font_end/src/pages](./front_end/src/pages): Directory for pages  
+  🍏 [front_end/src/pages/components](./front_end/src/pages/components): Directory for components used on multiple pages  
+  🍏 [front_end/src/pages/logo](./front_end/src/pages/logo): Directory for logos
+
+
+
+
 ## [](https://github.com/shpark76/docker-demo#docker-prerequisites)Docker Prerequisites:
 
 -   Windows [https://docs.docker.com/docker-for-windows/install/](https://docs.docker.com/docker-for-windows/install/)
