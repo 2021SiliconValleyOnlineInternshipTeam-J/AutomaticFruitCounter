@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 from pathlib import Path
+from api.detect import YOLO
+from api.detect import Bill
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -162,3 +164,16 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# PATHs
+WEIGHTS_PATH = "/app/api/bin/fruit.pt"
+PRICE_PATH = "/app/api/bin/fruit.bill"
+SRC_PATH = "../images/input/"
+OUTPUT_PATH = "../images/output/output_"
+
+
+# Load YOLO Model
+MODEL = YOLO(WEIGHTS_PATH)
+
+# Load Bill Data
+BILL = Bill(PRICE_PATH)
