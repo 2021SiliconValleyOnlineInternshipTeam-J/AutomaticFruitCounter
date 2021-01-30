@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom"; //React-Router import
 import './Home.css';
-import imgfile from './logo/logo.png';
+import imgfile from './logo/white_logo.png';
 
 const Home = () => {
   const parent_div = {
@@ -13,8 +13,17 @@ const Home = () => {
   const title_style = {
     marginTop: "10%",
   };
+
+  const background = {
+      width: "100%",
+      height: "1000px",
+      background: "linear-gradient(-45deg, #F12711, #F5AF19, #F5AF19, #F12711)",
+      backgroundSize: "400% 400%",
+      animation: "gradient 20s ease infinite",
+  };
+
   return (
-      <div id="home">
+      <div style={background}>
         <div style={parent_div}>
             <img className="logo" src={imgfile}/>
           <div style={title_style}>

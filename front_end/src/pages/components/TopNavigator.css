@@ -9,9 +9,10 @@ header {
   margin-left: 1em;
 }
 .container {
-  background: linear-gradient(to right, rgb(255, 226, 89), rgb(255, 204, 81));
+  background: linear-gradient(to left, rgb(255, 226, 89), rgb(255, 204, 81));
   max-width: 100%;
   margin: 0 auto;
+  box-shadow: 5px 5px 10px 0px rgba(88, 67, 0, 0.24);
 }
 
 .nav_logo{
