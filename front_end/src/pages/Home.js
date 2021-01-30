@@ -16,10 +16,10 @@ const Home = () => {
 
   const background = {
       width: "100%",
-      height: "1000px",
+      height: "1700px",
       background: "linear-gradient(-45deg, #F12711, #F5AF19, #F5AF19, #F12711)",
       backgroundSize: "400% 400%",
-      animation: "gradient 20s ease infinite",
+      animation: "gradient 13s ease infinite",
   };
 
   return (
