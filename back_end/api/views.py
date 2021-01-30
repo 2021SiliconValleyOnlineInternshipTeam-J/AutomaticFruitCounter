@@ -1,18 +1,14 @@
 from django.core.files.storage import default_storage
 from django.views.decorators.csrf import csrf_exempt
 from django.http import HttpResponse, JsonResponse
+from django.conf import settings
 from .models import MongoDbManager
-from .detect import YOLO
-from .detect import Bill
 import gridfs
 import json
 import datetime
 import cv2
 import os
 import base64
-
-WEIGHTS_PATH = "/app/api/bin/fruit.pt"
-model = YOLO(WEIGHTS_PATH)
 
 @csrf_exempt
 def testapi(request):
@@ -30,23 +26,14 @@ def testapi(request):
         data = {"url": "images" + '/input/' + now.strftime('%Y_%m_%d_%H_') + file_name}
         result = MongoDbManager().add_user_on_collection(data)
 
-        """
-            이 부분에 Model image 입력하는 코드 작성
-        """
-        PRICE_PATH = "bin/fruit.bill"
-        SRC_PATH = "../images/input/"
-        OUTPUT_PATH = "../images/output/output_"
-
         os.chdir("/app/api")
-        src = cv2.imread(SRC_PATH + file_name)
+        src = cv2.imread(settings.SRC_PATH + file_name)
 
-        bill = Bill(PRICE_PATH)
-        frame, items = model.detect(frame=src)
-        cv2.imwrite(OUTPUT_PATH + file_name, frame)
-        bill.add_price_info(items)
-        print(items)
+        frame, items = settings.MODEL.detect(src)
+        cv2.imwrite(settings.OUTPUT_PATH + file_name, frame)
+        settings.BILL.add_price_info(items)
         
-        with open(OUTPUT_PATH + file_name, "rb") as image_file:
+        with open(settings.OUTPUT_PATH + file_name, "rb") as image_file:
             encoded_string = base64.b64encode(image_file.read())
         items['url'] = encoded_string.decode("UTF-8")
         return JsonResponse(json.dumps(items), safe=False) if result else HttpResponse(status=500)
