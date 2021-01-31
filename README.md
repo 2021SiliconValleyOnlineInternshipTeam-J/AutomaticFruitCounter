@@ -14,7 +14,16 @@
 
 
 
-## 🍒 Contributor
+## 🍒 Contributors
+| Name | Country | Where to find you |
+| ---- | ------- | ----------------- |
+| MinJae Kim <br /> <img src="https://avatars.githubusercontent.com/u/33440010?s=460&u=6199a367926fe1bafc38156a85cdefae1d1f9a5a&v=4" width="100" />  | Republic Of Korea | [Github](https://github.com/minjae9610)|
+| Chunghwan Kim <br /> <img src="https://avatars.githubusercontent.com/u/49121847?s=460&v=4" width="100" />  | Republic Of Korea | [Github](https://github.com/CH0213)|
+| Chaeyeon Song <br /> <img src="https://avatars.githubusercontent.com/u/76681062?s=460&v=4" width="100" />  | Republic Of Korea | [Github](https://github.com/codus503)|
+| SiEun Lee <br /> <img src="https://avatars.githubusercontent.com/u/55918978?s=460&v=4" width="100" />  | Republic Of Korea | [Github](https://github.com/LeeSiEun-0107)|
+| Dahyeon Jeong <br /> <img src="https://avatars.githubusercontent.com/u/77030528?s=460&v=4" width="100" />  | Republic Of Korea | [Github](https://github.com/DahyeonJeong?tab=repositories)|
+
+
 
 ## 🍒 Language
 
