@@ -3,7 +3,7 @@ import TopNavigator from "./components/TopNavigator";
 import "./components/Buttons.css";
 import { Link } from "react-router-dom";
 import './EndPage.css';
-import { GlobalContext } from "./context/globalContext";
+import { GlobalContext } from "./context/GlobalContext";
 
 const LastPage = () => {
   const { jsonData } = useContext(GlobalContext);

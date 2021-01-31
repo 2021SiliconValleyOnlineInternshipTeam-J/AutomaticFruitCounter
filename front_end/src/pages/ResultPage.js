@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./components/Buttons.css";
 import TopNavigator from "./components/TopNavigator";
 import "./ResultPage.css";
-import { GlobalContext } from "./context/globalContext";
+import { GlobalContext } from "./context/GlobalContext";
 
 const ResultPage = () => {
   const { jsonData } = useContext(GlobalContext);

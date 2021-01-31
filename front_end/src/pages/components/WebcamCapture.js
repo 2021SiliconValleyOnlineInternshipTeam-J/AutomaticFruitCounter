@@ -2,7 +2,7 @@ import React, { useState, useContext } from "react";
 import Webcam from "react-webcam";
 import { Link } from "react-router-dom";
 import axios from "axios";
-import { GlobalContext } from "../context/globalContext";
+import { GlobalContext } from "../context/GlobalContext";
 
 const WebcamCapture = () => {
   const { setData } = useContext(GlobalContext);

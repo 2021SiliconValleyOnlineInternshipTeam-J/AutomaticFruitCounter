@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import TopNavigator from "./components/TopNavigator";
 import "./components/Buttons.css";
 import axios from "axios";
-import { GlobalContext } from "./context/globalContext";
+import { GlobalContext } from "./context/GlobalContext";
 
 const ImageUpload = () => {
   const [status, setStatus] = useState("");
