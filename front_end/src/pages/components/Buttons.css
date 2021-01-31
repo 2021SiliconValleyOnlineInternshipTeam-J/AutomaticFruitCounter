@@ -1,6 +1,6 @@
 .gray_button {
   border-radius: 8px;
-  font-size: 130%;
+  font-size: 1.3vw;
   color: slategray;
   border: 1px solid slategray;
   display: inline-block;
@@ -17,7 +17,7 @@
 
 .yellow_button {
   border-radius: 8px;
-  font-size: 130%;
+  font-size: 1.3vw;
   color: white;
   display: inline-block;
   width: 12%;

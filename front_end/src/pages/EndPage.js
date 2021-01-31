@@ -10,14 +10,14 @@ const LastPage = () => {
   const [amount, setAmount] = useState(0);
 
   const thanks_div = {
-    fontSize: "4rem",
+    fontSize: "4vw",
     color: "#FFE32C",
-    paddingTop: "15%",
+    paddingTop: "4vh",
   };
   const result_div = {
-    fontSize: "2.5rem",
-    paddingTop: "2%",
-    paddingBottom: "4%",
+    fontSize: "2.5vw",
+    paddingTop: "2vh",
+    paddingBottom: "4vh",
   };
 
   useEffect(() => {
@@ -33,7 +33,7 @@ const LastPage = () => {
   return (
     <div style={{ textAlign: "center"}}>
       <TopNavigator />
-        <div style={{ paddingTop: "4%"}} ></div>
+        <div style={{ paddingTop: "17vh"}} ></div>
         <div className="check"></div>
       <div style={thanks_div}>감사합니다!</div>
       <div style={result_div}>

@@ -74,10 +74,10 @@ const ImageUpload = () => {
   return (
     <div style={{ textAlign: "center" }}>
       <TopNavigator />
-      <div style={{ fontSize: "2.5rem", paddingTop: "5%" }}>
+      <div style={{ fontSize: "2.5vw", paddingTop: "5%" }}>
         계산할 사진 업로드
       </div>
-      <div style={{ fontSize: "1.3rem", color: "gray", paddingTop: "1%" }}>
+      <div style={{ fontSize: "1.3vw", color: "gray", paddingTop: "1%" }}>
         업로드할 파일을 아래 박스로 드래그 해 주세요
       </div>
       <div
@@ -112,7 +112,7 @@ const ImageUpload = () => {
           <div className="Status">{status}</div>
         </div>
       </div>
-      <div style={{ btn_div, marginTop: "3%" }}>
+      <div style={{ btn_div, marginTop: "3vh" }}>
         <Link to="/selectupload">
           <div className="gray_button">이전으로</div>
         </Link>
