@@ -33,7 +33,7 @@ const LastPage = () => {
   return (
     <div style={{ textAlign: "center"}}>
       <TopNavigator />
-        <div style={{ paddingTop: "13%"}} ></div>
+        <div style={{ paddingTop: "4%"}} ></div>
         <div className="check"></div>
       <div style={thanks_div}>감사합니다!</div>
       <div style={result_div}>
