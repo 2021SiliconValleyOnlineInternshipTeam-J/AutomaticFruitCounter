@@ -1,144 +1,124 @@
-import React, { Component } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./components/Buttons.css";
 import TopNavigator from "./components/TopNavigator";
 import "./ResultPage.css";
+import { GlobalContext } from "./context/globalContext";
 
-const parent_div = {
-  width: "100%",
-  height: "100%",
-  textAlign: "center"
-};
+const ResultPage = () => {
+  const { jsonData } = useContext(GlobalContext);
+  const [amount, setAmount] = useState(0);
+  const [list, setList] = useState([]);
 
-const q_div = {
-  fontSize: "2rem",
-  color: "gray",
-  paddingTop:"1%",
-};
-const table_div = {
-  textAlign: "center",
-  border: "1px solid #AAAAAA",
-  width: "60%",
-  display: "inline-block",
-  borderRadius: "38px",
-  padding:"3%"
-};
-const img_div = {
-  height: "100%",
-  imageAlign: "center",
-};
-class FruitField extends React.Component {
-  render() {
-    return (
-      <tr>
-        <td>{this.props.fruit.name} </td>
-        <td>{this.props.fruit.num}</td>
-        <td>{this.props.fruit.total}</td>
-      </tr>
-    );
-  }
-}
-class Table extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      bill: [
-        //test용 bill
-        {
-          name: "apple",
-          num: 1,
-          total: 1000,
-        },
-        {
-          name: "pineapple",
-          num: 3,
-          total: 2000,
-        },
-        {
-          name: "peach",
-          num: 5,
-          total: 3000,
-        },
-        {
-          name: "kiwi",
-          num: 23,
-          total: 10000,
-        },
-        {
-          name: "watermelon",
-          num: 1,
-          total: 10000,
-        },
-      ],
-      // bill: [
-      //   {
-      //     name: "apple",
-      //     num: 1,
-      //     total: 1000,
-      //   },
-      // ],
-    };
-  } //json받기 //this.setState + axios 이용
+  const parent_div = {
+    width: "100%",
+    height: "100%",
+    textAlign: "center",
+  };
+  const q_div = {
+    fontSize: "2rem",
+    color: "gray",
+    paddingTop: "1%",
+  };
+  const table_div = {
+    textAlign: "center",
+    border: "1px solid #AAAAAA",
+    width: "60%",
+    display: "inline-block",
+    borderRadius: "38px",
+    padding: "3%",
+  };
+  const img_div = {
+    height: "100%",
+    imageAlign: "center",
+  };
 
-  render() {
-    // key 부여
-    const mapToComponent = (data) => {
-      return data.map((fruit, i) => {
-        return <FruitField fruit={fruit} key={i} />;
-      });
-    };
-    return <tbody>{mapToComponent(this.state.bill)}</tbody>;
-  }
-}
+  useEffect(() => {
+    setList(() => []);
+    let fruitList = [];
+    let valueList = [];
+    fruitList = Object.keys(jsonData[0]);
+    valueList = Object.values(jsonData[0]);
 
-class ResultPage extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      image: null,
-      amount: 0,
-    };
-  } //총액과 이미지 받기 //this.setState + axios 이용
-  render() {
-    return (
-      <div style={{ textAlign: "center" }}>
-        <TopNavigator />
-        <div style={img_div}>
-          <div style={{ fontSize: "2.5rem", paddingTop: "1.5%" }}>계산결과</div>
-          <img src={this.state.image} style={{ height: "12em" }}></img>
-        </div>
-        <div style={q_div}>
-          <span>{this.state.amount}원</span>을 결제하시겠습니까?
-        </div>
-        <div style={table_div}>
-          <table style={{ fontSize: "1.3rem", display: "inline-block", border:"1px dashed #bcbcbc", padding: "2% 3%", borderRadius:"10px"}}>
-            <thead>
-              <tr>
-                <th>상품명</th>
-                <th>수량</th>
-                <th>금액</th>
-              </tr>
-            </thead>
-            <Table />
-            <tfoot>
-              <tr>
-                <td colSpan="2">총액</td>
-                <td className="amount">{this.state.amount}</td>
-              </tr>
-            </tfoot>
-          </table>
-        </div>
-        <div>
-          <Link to="/selectupload">
-            <div className="gray_button">취소하기</div>
-          </Link>
-          <Link to="/end">
-            <div className="yellow_button">결제하기</div>
-          </Link>
-        </div>
+    let sum = 0;
+    for (let i = 0; i < valueList.length - 1; i++) {
+      sum = sum + valueList[i][0] * valueList[i][1];
+    }
+    setAmount(sum);
+    let resultNum = 0;
+    let price = 0;
+    let fruit_name = "";
+    let data_result = [];
+
+    for (let i = 0; i < valueList.length - 1; i++) {
+      fruit_name = fruitList[i];
+      resultNum = valueList[i][0];
+      price = resultNum * valueList[i][1];
+      data_result[i] = [fruit_name, resultNum, price];
+    }
+    setList((preArray) => [
+      ...preArray,
+      data_result.map((array) => (
+        <tr>
+          {array.map((number) => (
+            <td>{number}</td>
+          ))}
+        </tr>
+      )),
+    ]);
+  }, [jsonData]);
+
+  return (
+    <div style={{ textAlign: "center" }}>
+      <TopNavigator />
+      <div>{}</div>
+      <div style={img_div}>
+        <div style={{ fontSize: "2.5rem", paddingTop: "1.5%" }}>계산결과</div>
+        <img
+          src={"data:image/jpeg;base64," + jsonData[0].url}
+          alt="이미지가 없습니다"
+          style={{ height: "12em" }}
+        ></img>
       </div>
-    );
-  }
-}
+      <div style={q_div}>
+        <span>{amount}원</span>을 결제하시겠습니까?
+      </div>
+      <div style={table_div}>
+        <table
+          style={{
+            fontSize: "1.3rem",
+            display: "inline-block",
+            border: "1px dashed #bcbcbc",
+            padding: "2% 3%",
+            borderRadius: "10px",
+          }}
+        >
+          <thead>
+            <tr>
+              <th>상품명</th>
+              <th>수량</th>
+              <th>금액</th>
+            </tr>
+          </thead>
+          <tbody>{list}</tbody>
+          <tfoot>
+            <tr>
+              <td colSpan="2">총액</td>
+              <td className="amount">{amount}</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+      <div>
+        <Link to="/selectupload">
+          <div className="gray_button">취소하기</div>
+        </Link>
+        <Link to="/end">
+          <div className="yellow_button">결제하기</div>
+        </Link>
+      </div>
+    </div>
+  );
+};
 
 export default ResultPage;
