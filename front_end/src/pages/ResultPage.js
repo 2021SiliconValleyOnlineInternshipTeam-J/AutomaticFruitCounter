@@ -16,9 +16,10 @@ const ResultPage = () => {
     textAlign: "center",
   };
   const q_div = {
-    fontSize: "2rem",
+    fontSize: "2vw",
     color: "gray",
-    paddingTop: "1%",
+    paddingTop: "2.5vh",
+    paddingBottom: "2.5vh",
   };
   const table_div = {
     textAlign: "center",
@@ -26,7 +27,10 @@ const ResultPage = () => {
     width: "60%",
     display: "inline-block",
     borderRadius: "38px",
-    padding: "3%",
+    background: "#FFFFFF",
+    maxWidth: "35vw",
+    marginBottom: "2.5vh",
+    boxShadow: "rgb(0 0 0 / 10%) 0px 0px 20px 0px, rgb(0 0 0 / 7%) 0px 5px 5px 0px",
   };
   const img_div = {
     height: "100%",
@@ -73,24 +77,23 @@ const ResultPage = () => {
       <TopNavigator />
       <div>{}</div>
       <div style={img_div}>
-        <div style={{ fontSize: "2.5vw", paddingTop: "1.5vh" }}>계산결과</div>
+        <div style={{ fontSize: "2.5vw", paddingTop: "3vh", paddingBottom: "3vh"}}>계산결과</div>
         <img
           src={"data:image/jpeg;base64," + jsonData[0].url}
           alt="이미지가 없습니다"
-          style={{ height: "12em" }}
+          style={{ height: "17em" }}
         ></img>
       </div>
       <div style={q_div}>
-        <span>{amount}원</span>을 결제하시겠습니까?
+        <span style={{color:"rgb(255 204 0)"}}>{amount}원</span>을 결제하시겠습니까?
       </div>
       <div style={table_div}>
         <table
           style={{
             fontSize: "1.3vw",
             display: "inline-block",
-            border: "1px dashed #bcbcbc",
             padding: "2vh 3vh",
-            borderRadius: "10px",
+            borderRadius: "3vw",
           }}
         >
           <thead>
@@ -103,8 +106,8 @@ const ResultPage = () => {
           <tbody>{list}</tbody>
           <tfoot>
             <tr>
-              <td colSpan="2">총액</td>
-              <td className="amount">{amount}</td>
+              <td colSpan="2" style={{color:"black"}}>총액</td>
+              <td className="amount" style={{color:"black"}}>{amount}</td>
             </tr>
           </tfoot>
         </table>

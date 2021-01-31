@@ -1,30 +1,51 @@
 td:nth-child(1) {
-    text-align: left;
+    text-align: center;
+    padding: 3px;
+    color:dimgray;
 }
 
 td:nth-child(2) {
-    text-align: left;
+    text-align: center;
+    padding: 3px;
+    color:dimgray;
 }
 
 td:nth-child(3) {
-    text-align: right;
+    text-align: center;
+    padding: 3px;
+    color:dimgray;
 }
 
 th:nth-child(1) {
-    text-align: left;
-    width: 40%;
+    text-align: center;
+    width: 30%;
+    padding: 3px;
 }
 
 th:nth-child(2) {
-    text-align: left;
+    text-align: center;
     width: 30%;
+    padding: 3px;
 }
 
 th:nth-child(3) {
-    text-align: right;
+    text-align: center;
     width: 30%;
+    padding: 3px;
 }
 
 .amount{
-    text-align: right;
+    text-align: center;
+}
+
+.form {
+  position: relative;
+  z-index: 1;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin-bottom: 3vw;
+  padding: 0.5vw;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
