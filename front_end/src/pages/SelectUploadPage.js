@@ -13,10 +13,10 @@ const SelectUploadPage = ({ history }) => {
   return (
     <div style={{ textAlign: "center", width: "100%" }}>
       <TopNavigator />
-      <div style={{ fontSize: "2.5rem", paddingTop: "1.5%"}}>
+      <div style={{ fontSize: "2.5vw", paddingTop: "3vh"}}>
         계산 방식
       </div>
-      <div style={{ fontSize: "1.3rem", color:"gray", paddingTop: "1%"}}>
+      <div style={{ fontSize: "1.3vw", color:"gray", paddingTop: "1vh"}}>
         과일을 계산할 방식을 선택해 주세요
       </div>
 
@@ -29,7 +29,7 @@ const SelectUploadPage = ({ history }) => {
                     </Link>
 
 
-      <div style={btn_div} style={{paddingTop:"2%"}}>
+      <div style={btn_div} style={{paddingTop:"2vh"}}>
         <Link to="/">
           <div className="gray_button">이전으로</div>
         </Link>

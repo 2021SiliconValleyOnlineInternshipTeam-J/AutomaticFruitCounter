@@ -73,7 +73,7 @@ const ResultPage = () => {
       <TopNavigator />
       <div>{}</div>
       <div style={img_div}>
-        <div style={{ fontSize: "2.5rem", paddingTop: "1.5%" }}>계산결과</div>
+        <div style={{ fontSize: "2.5vw", paddingTop: "1.5vh" }}>계산결과</div>
         <img
           src={"data:image/jpeg;base64," + jsonData[0].url}
           alt="이미지가 없습니다"
@@ -86,10 +86,10 @@ const ResultPage = () => {
       <div style={table_div}>
         <table
           style={{
-            fontSize: "1.3rem",
+            fontSize: "1.3vw",
             display: "inline-block",
             border: "1px dashed #bcbcbc",
-            padding: "2% 3%",
+            padding: "2vh 3vh",
             borderRadius: "10px",
           }}
         >

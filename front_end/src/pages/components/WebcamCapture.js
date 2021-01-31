@@ -46,15 +46,15 @@ const WebcamCapture = () => {
 
   return (
     <div style={parent_div}>
-      <div style={{ fontSize: "2.5rem", color: "#000000", paddingTop: "3%" }}>
+      <div style={{ fontSize: "2.5vw", color: "#000000", paddingTop: "5vh" }}>
         실시간 카메라
       </div>
       <div
         style={{
-          fontSize: "1rem",
+          fontSize: "1vw",
           color: "gray",
-          paddingTop: "1%",
-          paddingBottom: "3%",
+          paddingTop: "1vh",
+          paddingBottom: "3vh",
         }}
       >
         화면에 계산할 물건이 모두 보이도록 하고 결제하기를 눌러주세요
@@ -67,7 +67,7 @@ const WebcamCapture = () => {
           screenshotFormat="image/jpeg"
         />
       </>
-      <div style={{ paddingTop: "2%" }}>
+      <div style={{ paddingTop: "1vh" }}>
         <Link to="/selectupload">
           <div className="gray_button">취소하기</div>
         </Link>
