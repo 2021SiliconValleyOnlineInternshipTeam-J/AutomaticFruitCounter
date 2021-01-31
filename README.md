@@ -11,7 +11,9 @@
 >> 🍏 [front_end/src/pages/components](./front_end/src/pages/components): Directory for components used on multiple pages  
 >> 🍏 [front_end/src/pages/logo](./front_end/src/pages/logo): Directory for logos
 
-
+<div align="right">
+    <b><a href="#fruit-billing">⬆️ Back to Top</a></b>
+</div>
 
 
 ## 🍒 Contributors
