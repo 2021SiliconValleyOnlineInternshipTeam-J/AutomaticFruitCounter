@@ -28,7 +28,7 @@ const LastPage = () => {
       setData(() => [{ url: "" }]);
     };
   }, [jsonData]);
-  
+
   return (
     <div style={{ textAlign: "center" }}>
       <TopNavigator />
