@@ -27,7 +27,6 @@ const LastPage = () => {
       sum = sum + valueList[i][0] * valueList[i][1];
     }
     setAmount(sum);
-    console.log("endpage");
   }, [jsonData]);
 
   return (

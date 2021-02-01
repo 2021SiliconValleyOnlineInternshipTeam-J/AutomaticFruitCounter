@@ -8,8 +8,10 @@ const WebcamCapture = () => {
   const { setData } = useContext(GlobalContext);
   const webcamRef = React.useRef(null);
   const [imgSrc, setImgSrc] = React.useState(null);
+
   const capture = () => {
     const imageSrc = webcamRef.current.getScreenshot();
+    console.log(imageSrc);
     setImgSrc(imageSrc);
     const byteString = atob(imageSrc.split(",")[1]);
     const ab = new ArrayBuffer(byteString.length);
@@ -20,7 +22,9 @@ const WebcamCapture = () => {
     const blob = new Blob([ia], {
       type: "image/jpeg",
     });
-    const file = new File([blob], "image.jpg");
+    
+    const date = new Date(); // image 이름이 중복돼서 문제가 발생하므로 시간을 앞에 붙여주기 위해
+    const file = new File([blob], date.getSeconds()+"image.jpg");
     const payload = new FormData();
     payload.append("image", file);
     let url = "/api/addimage/";
