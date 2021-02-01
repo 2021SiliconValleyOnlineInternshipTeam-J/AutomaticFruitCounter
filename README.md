@@ -10,7 +10,7 @@
 
 ## 🍒front_end
 ### 🍍Design
-  [🖍Design Document](https://xd.adobe.com/view/980f8ffe-b676-4f75-bbe6-05a832d6b508-cd5c/)    
+  [🖍Design Document](https://www.notion.so/984e7c8ddc0a4cd1875fa445a0039524)    
   
 ### 🍍Structure
   🍏 [font_end/src/pages](./front_end/src/pages): Directory for pages  
