@@ -23,13 +23,13 @@
 
 
 ## 🍒Contributors
-| Name | Country | Where to find you |
-| ---- | ------- | ----------------- |
-| MinJae Kim <br /> <img src="https://avatars.githubusercontent.com/u/33440010?s=460&u=0b6b72d249309eb95a88afa55a1f954f447a88b7&v=4" width="100" />  | Republic Of Korea | [Github](https://github.com/minjae9610)|
-| Chunghwan Kim <br /> <img src="https://avatars.githubusercontent.com/u/49121847?s=460&v=4" width="100" />  | Republic Of Korea | [Github](https://github.com/CH0213)|
-| Chaeyeon Song <br /> <img src="https://avatars.githubusercontent.com/u/76681062?s=460&v=4" width="100" />  | Republic Of Korea | [Github](https://github.com/codus503)|
-| SiEun Lee <br /> <img src="https://avatars.githubusercontent.com/u/55918978?s=460&v=4" width="100" />  | Republic Of Korea | [Github](https://github.com/LeeSiEun-0107)|
-| Dahyeon Jeong <br /> <img src="https://avatars.githubusercontent.com/u/77030528?s=460&v=4" width="100" />  | Republic Of Korea | [Github](https://github.com/DahyeonJeong)|
+| Name | Country | Where to find you | Role |
+| ---- | ------- | ----------------- | ---- |
+| MinJae Kim <br /> <img src="https://avatars.githubusercontent.com/u/33440010?s=460&u=0b6b72d249309eb95a88afa55a1f954f447a88b7&v=4" width="100" />  | Republic Of Korea | [Github](https://github.com/minjae9610)| Back End |
+| Chunghwan Kim <br /> <img src="https://avatars.githubusercontent.com/u/49121847?s=460&v=4" width="100" />  | Republic Of Korea | [Github](https://github.com/CH0213)| Back End |
+| Chaeyeon Song <br /> <img src="https://avatars.githubusercontent.com/u/76681062?s=460&v=4" width="100" />  | Republic Of Korea | [Github](https://github.com/codus503)| Front End |
+| SiEun Lee <br /> <img src="https://avatars.githubusercontent.com/u/55918978?s=460&v=4" width="100" />  | Republic Of Korea | [Github](https://github.com/LeeSiEun-0107)| Front End |
+| Dahyeon Jeong <br /> <img src="https://avatars.githubusercontent.com/u/77030528?s=460&v=4" width="100" />  | Republic Of Korea | [Github](https://github.com/DahyeonJeong)| Front End |
 
 <div align="right">
     <b><a href="#fruit-billing">⬆️ Back to Top</a></b>
