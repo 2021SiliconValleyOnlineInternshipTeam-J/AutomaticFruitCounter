@@ -5,6 +5,7 @@ import TopNavigator from "./components/TopNavigator";
 import "./components/Buttons.css";
 import axios from "axios";
 import { GlobalContext } from "./context/GlobalContext";
+import swal from "sweetalert";
 
 const ImageUpload = () => {
   const [status, setStatus] = useState("");
@@ -59,9 +60,9 @@ const ImageUpload = () => {
     payload.append("image", image);
     let url = "/api/addimage/";
 
-    if( image == true){
-    alert("파일을 넣어주세요!");
-    event.preventDefault();
+    if (image == true) {
+      swal("Fail", "파일을 다시 업로드해 주세요!", "error");
+      event.preventDefault();
     }
 
     axios

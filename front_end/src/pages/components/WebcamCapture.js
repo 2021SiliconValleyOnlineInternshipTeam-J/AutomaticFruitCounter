@@ -22,9 +22,9 @@ const WebcamCapture = () => {
     const blob = new Blob([ia], {
       type: "image/jpeg",
     });
-    
+
     const date = new Date(); // image 이름이 중복돼서 문제가 발생하므로 시간을 앞에 붙여주기 위해
-    const file = new File([blob], date.getSeconds()+"image.jpg");
+    const file = new File([blob], date.getSeconds() + "image.jpg");
     const payload = new FormData();
     payload.append("image", file);
     let url = "/api/addimage/";
