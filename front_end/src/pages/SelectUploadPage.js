@@ -1,15 +1,22 @@
-import React from "react";
+import React,{useContext, useEffect} from "react";
 import TopNavigator from "./components/TopNavigator";
 import { Link } from "react-router-dom";
 import "./components/Buttons.css";
 import "./SelectUploadPage.css";
+import { GlobalContext } from "./context/GlobalContext";
 
 const SelectUploadPage = ({ history }) => {
-
+  const {jsonData, setData} = useContext(GlobalContext);
   const btn_div = {
     padding: "3%",
   };
 
+  useEffect(() => {
+    return function cleanup() {
+      setData(() => [{ url: "" }]);
+    };
+  },[jsonData]);
+  
   return (
     <div style={{ textAlign: "center", width: "100%" }}>
       <TopNavigator />
