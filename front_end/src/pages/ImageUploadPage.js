@@ -54,10 +54,16 @@ const ImageUpload = () => {
     event.preventDefault();
   };
 
-  const RequestImage = () => {
+  const RequestImage = (event) => {
     const payload = new FormData();
     payload.append("image", image);
     let url = "/api/addimage/";
+
+    if( image == true){
+    alert("파일을 넣어주세요!");
+    event.preventDefault();
+    }
+
     axios
       .post(url, payload, {
         headers: {
