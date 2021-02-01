@@ -2,7 +2,13 @@
 
 -   Automatic fruit counter is web projects that classify and automatically calculate fruits.
 
-## 🍒font_end
+## 🍌Index
+<b><a href="#front_end">🍒front_end</a></b>  
+<b><a href="#contributors">🍒Contributors</a></b>  
+<b><a href="#language">🍒Language</a></b>  
+
+
+## 🍒front_end
 ### 🍍Design
   [🖍Design Document](https://xd.adobe.com/view/980f8ffe-b676-4f75-bbe6-05a832d6b508-cd5c/)    
   
@@ -16,19 +22,25 @@
 </div>
 
 
-## 🍒 Contributors
+## 🍒Contributors
 | Name | Country | Where to find you |
 | ---- | ------- | ----------------- |
 | MinJae Kim <br /> <img src="https://avatars.githubusercontent.com/u/33440010?s=460&u=6199a367926fe1bafc38156a85cdefae1d1f9a5a&v=4" width="100" />  | Republic Of Korea | [Github](https://github.com/minjae9610)|
 | Chunghwan Kim <br /> <img src="https://avatars.githubusercontent.com/u/49121847?s=460&v=4" width="100" />  | Republic Of Korea | [Github](https://github.com/CH0213)|
 | Chaeyeon Song <br /> <img src="https://avatars.githubusercontent.com/u/76681062?s=460&v=4" width="100" />  | Republic Of Korea | [Github](https://github.com/codus503)|
 | SiEun Lee <br /> <img src="https://avatars.githubusercontent.com/u/55918978?s=460&v=4" width="100" />  | Republic Of Korea | [Github](https://github.com/LeeSiEun-0107)|
-| Dahyeon Jeong <br /> <img src="https://avatars.githubusercontent.com/u/77030528?s=460&v=4" width="100" />  | Republic Of Korea | [Github](https://github.com/DahyeonJeong?tab=repositories)|
+| Dahyeon Jeong <br /> <img src="https://avatars.githubusercontent.com/u/77030528?s=460&v=4" width="100" />  | Republic Of Korea | [Github](https://github.com/DahyeonJeong)|
+
+<div align="right">
+    <b><a href="#fruit-billing">⬆️ Back to Top</a></b>
+</div>
 
 
+## 🍒Language
 
-## 🍒 Language
-
+<div align="right">
+    <b><a href="#fruit-billing">⬆️ Back to Top</a></b>
+</div>
 
 
 ## [](https://github.com/shpark76/docker-demo#docker-prerequisites)Docker Prerequisites:
