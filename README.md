@@ -34,19 +34,19 @@
   : 6,000 images / 63 classes / 16,830 annotations
   ![Train/Test Split](https://user-images.githubusercontent.com/33440010/106569267-a5140b80-6577-11eb-8731-30d9504f0fab.png)
   ![Class Balance](https://user-images.githubusercontent.com/33440010/106569786-55820f80-6578-11eb-8996-f8b72652b2f1.png)  
-
+  > 
   > 🍏 [Training result](https://wandb.ai/mj-kim/YOLOv5?workspace=user-mj-kim)  
   > | metrics/precision | metrics/mAP_0.5 |
   > | :---------------: | :-------------: |
   > | ![metrics/precision](https://user-images.githubusercontent.com/33440010/106571339-62076780-657a-11eb-9e89-8c6f19a18a43.png) | ![metrics/mAP_0.5](https://user-images.githubusercontent.com/33440010/106571354-65025800-657a-11eb-9d32-979ffb23f6dd.png) | 
   > | metrics/mAP_0.5:0.95 | metrics/recall |
   > | ![metrics/mAP_0.5:0.95](https://user-images.githubusercontent.com/33440010/106571345-63d12b00-657a-11eb-8af9-953a01c8c4a6.png) | ![metrics/recall](https://user-images.githubusercontent.com/33440010/106571358-66338500-657a-11eb-9a23-e640ba750245.png) |
-
+  > 
   > |     | obj_loss | box_loss | cls_loss |
   > | :-: | :------: | :------: | :------: |
   > | Train | ![train/obj_loss](https://user-images.githubusercontent.com/33440010/106573037-7ea49f00-657c-11eb-9f04-b0fd05518798.png) | ![train/box_loss](https://user-images.githubusercontent.com/33440010/106573039-7f3d3580-657c-11eb-8cb3-8a630150289c.png) | ![train/cls_loss](https://user-images.githubusercontent.com/33440010/106573034-7e0c0880-657c-11eb-96a1-0a293bf776a3.png) |
   > | Validation | ![val/obj_loss](https://user-images.githubusercontent.com/33440010/106573042-7fd5cc00-657c-11eb-883d-4de786377699.png) | ![val/box_loss](https://user-images.githubusercontent.com/33440010/106573043-806e6280-657c-11eb-8f68-a74f58fe267a.png) | ![val/cls_loss](https://user-images.githubusercontent.com/33440010/106573040-7f3d3580-657c-11eb-8846-fea9dce2e1b6.png) |
-
+  > 
   > base model : YOLOv5s
   > ![image](https://api.wandb.ai/files/mj-kim/YOLOv5/p9ges2w3/media/images/Results_3904_0.png)
   > base model : YOLOv5m
