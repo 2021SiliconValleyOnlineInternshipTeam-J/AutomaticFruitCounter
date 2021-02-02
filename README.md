@@ -3,19 +3,19 @@
 -   Automatic fruit counter is web projects that classify and automatically calculate fruits.
 
 ## 🍌Index
-<b><a href="#front_end">🍒front_end</a></b>  
-<b><a href="#contributors">🍒Contributors</a></b>  
-<b><a href="#language">🍒Language</a></b>  
+> <b><a href="#front_end">🍒front_end</a></b>  
+> <b><a href="#contributors">🍒Contributors</a></b>  
+> <b><a href="#language">🍒Language</a></b>  
 
 
 ## 🍒Front_end
 ### 🍍Design
-  [🖍Design Document](https://www.notion.so/984e7c8ddc0a4cd1875fa445a0039524)    
+  > [🖍Design Document](https://www.notion.so/984e7c8ddc0a4cd1875fa445a0039524)    
   
 ### 🍍Structure
-  🍏 [font_end/src/pages](./front_end/src/pages) : Directory for pages  
-  🍏 [front_end/src/pages/components](./front_end/src/pages/components) : Directory for components used on multiple pages  
-  🍏 [front_end/src/pages/logo](./front_end/src/pages/logo) : Directory for logos
+  > 🍏 [font_end/src/pages](./front_end/src/pages) : Directory for pages  
+  > 🍏 [front_end/src/pages/components](./front_end/src/pages/components) : Directory for components used on multiple pages  
+  > 🍏 [front_end/src/pages/logo](./front_end/src/pages/logo) : Directory for logos
 
 <div align="right">
     <b><a href="#fruit-billing">⬆️ Back to Top</a></b>
@@ -27,14 +27,14 @@
 
   
 ### 🍍Object Detection Model
-  🍏 [YOLOv5](https://pytorch.org/hub/ultralytics_yolov5/)  
-  🍏 [YOLOv5 github](https://github.com/ultralytics/yolov5)  
-  🍏 [DataSet](https://public.roboflow.com/object-detection/synthetic-fruit/)
+  > 🍏 [YOLOv5](https://pytorch.org/hub/ultralytics_yolov5/)  
+  > 🍏 [YOLOv5 github](https://github.com/ultralytics/yolov5)  
+  > 🍏 [DataSet](https://public.roboflow.com/object-detection/synthetic-fruit/)
   : 6,000 images / 63 classes / 16,830 annotations
   ![Train/Test Split](https://user-images.githubusercontent.com/33440010/106569267-a5140b80-6577-11eb-8731-30d9504f0fab.png)
   ![Class Balance](https://user-images.githubusercontent.com/33440010/106569786-55820f80-6578-11eb-8996-f8b72652b2f1.png)  
 
-  🍏 [Training result](https://wandb.ai/mj-kim/YOLOv5?workspace=user-mj-kim)  
+  > 🍏 [Training result](https://wandb.ai/mj-kim/YOLOv5?workspace=user-mj-kim)  
   | metrics/precision | metrics/mAP_0.5 |
   | :---------------: | :-------------: |
   | ![metrics/precision](https://user-images.githubusercontent.com/33440010/106571339-62076780-657a-11eb-9e89-8c6f19a18a43.png) | ![metrics/mAP_0.5](https://user-images.githubusercontent.com/33440010/106571354-65025800-657a-11eb-9d32-979ffb23f6dd.png) | 
