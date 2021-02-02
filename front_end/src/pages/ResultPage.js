@@ -84,7 +84,7 @@ const ResultPage = () => {
         </div>
         <img
           src={"data:image/jpeg;base64," + jsonData[0].url}
-          alt="이미지가 없습니다"
+          alt="로딩중 입니다!"
           style={{ height: "17em" }}
         ></img>
       </div>
