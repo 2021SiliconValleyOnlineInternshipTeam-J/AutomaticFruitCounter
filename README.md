@@ -17,7 +17,7 @@
 > <b><a href="#docker-prerequisites">🍒Docker Prerequisites</a></b>  
 
 ## 🍒Architecture
-  > ![아키텍쳐](https://user-images.githubusercontent.com/49121847/106699753-ced83b80-6626-11eb-81d1-6a95a2b1249a.PNG) 
+  > ![아키텍쳐](https://user-images.githubusercontent.com/49121847/106699753-ced83b80-6626-11eb-81d1-6a95a2b1249a.PNG)  
   > 🍏 [Frontend](./front_end/) : React  
   > 🍏 [Web Server](./nginx/) : Nginx(Reverse Proxy)  
   > 🍏 [WSGI](https://gunicorn.org/) : gunicorn   
