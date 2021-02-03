@@ -77,7 +77,9 @@
 
 
 ## 🍒Language
--   JavaScript, Python, CSS, HTML, Dockerfile
+* ReactJS
+* Django
+
 <div align="right">
     <b><a href="#fruit-billing">⬆️ Back to Top</a></b>
 </div>
