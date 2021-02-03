@@ -30,6 +30,15 @@
 
 ## 🍒Back_end
 ### 🍍Architecture
+  > ![아키텍쳐](https://user-images.githubusercontent.com/49121847/106699753-ced83b80-6626-11eb-81d1-6a95a2b1249a.PNG) 
+
+  > 🍏 [Frontend](./front_end/) : React  
+  > 🍏 [Web Server](./nginx/) : Nginx(Reverse Proxy)  
+  > 🍏 [WSGI](https://gunicorn.org/) : gunicorn   
+  > 🍏 [Application Server](./back_end/) : Django  
+  > 🍏 [DataBase](./mongo/) : MongoDB  
+  
+
 
   
 ### 🍍Object Detection Model
