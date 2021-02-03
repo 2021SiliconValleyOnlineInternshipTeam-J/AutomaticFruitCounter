@@ -75,7 +75,7 @@
 
 
 ## 🍒Language
-
+-   JavaScript, Python, CSS, HTML, Dockerfile
 <div align="right">
     <b><a href="#fruit-billing">⬆️ Back to Top</a></b>
 </div>
