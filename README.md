@@ -5,6 +5,8 @@
   <img src="https://img.shields.io/badge/Pytorch-1.7.1-blue" />
   <img src="https://img.shields.io/badge/OpenCV-4.5.1.48-blue" />
   <img src="https://img.shields.io/github/contributors/2021SiliconValleyOnlineInternshipTeam-J/FruitBilling" />
+  <img src="https://img.shields.io/github/last-commit/2021SiliconValleyOnlineInternshipTeam-J/FruitBilling" />
+  <img src="https://img.shields.io/github/commit-activity/w/2021SiliconValleyOnlineInternshipTeam-J/FruitBilling" />
 </p>
 -   Automatic fruit counter is web projects that classify and automatically calculate fruits.
 
