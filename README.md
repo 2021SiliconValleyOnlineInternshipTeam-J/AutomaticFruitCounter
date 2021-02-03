@@ -10,8 +10,8 @@
 
 ## 🍌Index
 > <b><a href="#architecture">🍒Architecture</a></b>  
-> <b><a href="#front-end">🍒Front_end</a></b>  
-> <b><a href="#back-end">🍒Back_end</a></b>  
+> <b><a href="#frontend">🍒Front_end</a></b>  
+> <b><a href="#backend">🍒Back_end</a></b>  
 > <b><a href="#contributors">🍒Contributors</a></b>  
 > <b><a href="#framework">🍒Language</a></b>  
 
@@ -25,7 +25,7 @@
   
 
 
-## 🍒Front_end
+## 🍒Frontend
 ### 🍍Design
   > [🖍Design Document](https://www.notion.so/984e7c8ddc0a4cd1875fa445a0039524)    
   
@@ -39,7 +39,7 @@
 </div>
 
 
-## 🍒Back_end
+## 🍒Backend
 
 ### 🍍Object Detection Model
   > 🍏 [YOLOv5](https://pytorch.org/hub/ultralytics_yolov5/)  
