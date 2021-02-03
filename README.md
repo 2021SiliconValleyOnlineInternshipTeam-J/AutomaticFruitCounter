@@ -1,5 +1,7 @@
 # Fruit Billing
-
+<p align="center">
+  <img src="https://img.shields.io/badge/Node.js-14.15.3-blue" />
+</p>
 -   Automatic fruit counter is web projects that classify and automatically calculate fruits.
 
 ## 🍌Index
