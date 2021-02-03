@@ -10,8 +10,10 @@
 </p>
 <p align="center">
  <img src="https://postfiles.pstatic.net/MjAyMTAxMjhfMTY3/MDAxNjExODE5NzU1MjY5.j6CM8WPeuQka8KlNCmD5LdZ66ZPC1oQdDVYdcrKqj3kg.0NsDAB8IqrvtaRpFqs57J6TN7ue7FwSaD7zxti8HW3cg.PNG.te04056/logo.png?type=w773" width="240px;"/>
+    
+  Automatic fruit counter is web projects that classify and automatically calculate fruits.
+
 <p>
-Automatic fruit counter is web projects that classify and automatically calculate fruits.
 
 
 ### 1. Image file 
