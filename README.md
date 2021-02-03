@@ -47,7 +47,7 @@
   > 🍏 [front_end/src/pages/logo](./front_end/src/pages/logo) : Directory for logos
 
 <div align="right">
-    <b><a href="#automatic-fruit-counter">⬆️ Back to Top</a></b>
+    <b><a href="#Automatic-Fruit-Counter">⬆️ Back to Top</a></b>
 </div>
 
 
