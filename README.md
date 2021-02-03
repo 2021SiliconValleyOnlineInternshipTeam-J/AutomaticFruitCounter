@@ -10,10 +10,11 @@
 
 ## 🍌Index
 > <b><a href="#architecture">🍒Architecture</a></b>  
-> <b><a href="#frontend">🍒Front_end</a></b>  
-> <b><a href="#backend">🍒Back_end</a></b>  
+> <b><a href="#frontend">🍒Frontend</a></b>  
+> <b><a href="#backend">🍒Backend</a></b>  
 > <b><a href="#contributors">🍒Contributors</a></b>  
 > <b><a href="#framework">🍒Framework</a></b>  
+> <b><a href="#docker-prerequisites">🍒Docker Prerequisites</a></b>  
 
 ## 🍒Architecture
   > ![아키텍쳐](https://user-images.githubusercontent.com/49121847/106699753-ced83b80-6626-11eb-81d1-6a95a2b1249a.PNG) 
@@ -95,7 +96,7 @@
 </div>
 
 
-## [](https://github.com/shpark76/docker-demo#docker-prerequisites)Docker Prerequisites:
+## [](https://github.com/shpark76/docker-demo#docker-prerequisites)🍒Docker Prerequisites
 
 -   Windows [https://docs.docker.com/docker-for-windows/install/](https://docs.docker.com/docker-for-windows/install/)
 -   Mac [https://docs.docker.com/docker-for-mac/install/](https://docs.docker.com/docker-for-mac/install/)
