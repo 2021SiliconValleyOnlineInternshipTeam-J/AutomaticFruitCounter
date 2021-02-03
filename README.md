@@ -87,7 +87,7 @@
 </div>
 
 
-## 🍒Language
+## 🍒Framework
 * ReactJS
 * Django
 
