@@ -1,4 +1,4 @@
-# Automatic Fruit Counter <img src="https://postfiles.pstatic.net/MjAyMTAxMjhfMTY3/MDAxNjExODE5NzU1MjY5.j6CM8WPeuQka8KlNCmD5LdZ66ZPC1oQdDVYdcrKqj3kg.0NsDAB8IqrvtaRpFqs57J6TN7ue7FwSaD7zxti8HW3cg.PNG.te04056/logo.png?type=w773" width="30px;"/>
+# Automatic Fruit Counter
 <p align="center">
   <img src="https://img.shields.io/badge/Node.js-14.15.3-blue" />
   <img src="https://img.shields.io/badge/Python-3.8.5-blue" />
