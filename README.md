@@ -13,7 +13,7 @@
 > <b><a href="#frontend">🍒Front_end</a></b>  
 > <b><a href="#backend">🍒Back_end</a></b>  
 > <b><a href="#contributors">🍒Contributors</a></b>  
-> <b><a href="#framework">🍒Language</a></b>  
+> <b><a href="#framework">🍒Framework</a></b>  
 
 ## 🍒Architecture
   > ![아키텍쳐](https://user-images.githubusercontent.com/49121847/106699753-ced83b80-6626-11eb-81d1-6a95a2b1249a.PNG) 
