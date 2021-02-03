@@ -1,6 +1,7 @@
 # Fruit Billing
 <p align="center">
   <img src="https://img.shields.io/badge/Node.js-14.15.3-blue" />
+  <img src="https://img.shields.io/badge/Python-3.8.5-blue" />
   <img src="https://img.shields.io/badge/Pytorch-1.7.1-blue" />
   <img src="https://img.shields.io/github/contributors/2021SiliconValleyOnlineInternshipTeam-J/FruitBilling" />
 </p>
