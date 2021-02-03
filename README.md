@@ -11,10 +11,10 @@
 -   Automatic fruit counter is web projects that classify and automatically calculate fruits.
 
 ### 1. Image file 
-![1 사진](https://user-images.githubusercontent.com/49121847/106707194-2fba4080-6634-11eb-8ea6-aa1cd68d110e.gif)
+![imageupload](https://user-images.githubusercontent.com/49121847/106713311-9e4fcc00-663d-11eb-9831-1d6ed9a5e87c.gif)
 
 ### 2. Webcam
-![2 웹캠](https://user-images.githubusercontent.com/49121847/106707204-32b53100-6634-11eb-9736-2ed1e6eb015f.gif)
+![webcam](https://user-images.githubusercontent.com/49121847/106713315-9f80f900-663d-11eb-8bba-ee22a2eba4b2.gif)
 
 ## 🍌Index
 > <b><a href="#architecture">🍓Architecture</a></b>  
