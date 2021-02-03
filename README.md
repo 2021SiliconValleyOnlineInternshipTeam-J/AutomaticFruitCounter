@@ -9,10 +9,20 @@
 -   Automatic fruit counter is web projects that classify and automatically calculate fruits.
 
 ## 🍌Index
-> <b><a href="#Front_end">🍒Front_end</a></b>  
-> <b><a href="#Back_end">🍒Back_end</a></b>  
+> <b><a href="#architecture">🍒Architecture</a></b>  
+> <b><a href="#front-end">🍒Front_end</a></b>  
+> <b><a href="#back-end">🍒Back_end</a></b>  
 > <b><a href="#contributors">🍒Contributors</a></b>  
-> <b><a href="#language">🍒Language</a></b>  
+> <b><a href="#framework">🍒Language</a></b>  
+
+## 🍒Architecture
+  > ![아키텍쳐](https://user-images.githubusercontent.com/49121847/106699753-ced83b80-6626-11eb-81d1-6a95a2b1249a.PNG) 
+  > 🍏 [Frontend](./front_end/) : React  
+  > 🍏 [Web Server](./nginx/) : Nginx(Reverse Proxy)  
+  > 🍏 [WSGI](https://gunicorn.org/) : gunicorn   
+  > 🍏 [Application Server](./back_end/) : Django  
+  > 🍏 [DataBase](./mongo/) : MongoDB  
+  
 
 
 ## 🍒Front_end
@@ -30,18 +40,7 @@
 
 
 ## 🍒Back_end
-### 🍍Architecture
-  > ![아키텍쳐](https://user-images.githubusercontent.com/49121847/106699753-ced83b80-6626-11eb-81d1-6a95a2b1249a.PNG) 
 
-  > 🍏 [Frontend](./front_end/) : React  
-  > 🍏 [Web Server](./nginx/) : Nginx(Reverse Proxy)  
-  > 🍏 [WSGI](https://gunicorn.org/) : gunicorn   
-  > 🍏 [Application Server](./back_end/) : Django  
-  > 🍏 [DataBase](./mongo/) : MongoDB  
-  
-
-
-  
 ### 🍍Object Detection Model
   > 🍏 [YOLOv5](https://pytorch.org/hub/ultralytics_yolov5/)  
   > 🍏 [YOLOv5 github](https://github.com/ultralytics/yolov5)  
