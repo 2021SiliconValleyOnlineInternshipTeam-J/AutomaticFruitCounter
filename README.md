@@ -3,6 +3,7 @@
   <img src="https://img.shields.io/badge/Node.js-14.15.3-blue" />
   <img src="https://img.shields.io/badge/Python-3.8.5-blue" />
   <img src="https://img.shields.io/badge/Pytorch-1.7.1-blue" />
+  <img src="https://img.shields.io/badge/OpenCV-4.5.1.48-blue" />
   <img src="https://img.shields.io/github/contributors/2021SiliconValleyOnlineInternshipTeam-J/FruitBilling" />
 </p>
 -   Automatic fruit counter is web projects that classify and automatically calculate fruits.
@@ -30,8 +31,9 @@
 
 ## 🍒Back_end
 ### 🍍Architecture
-  > ![아키텍쳐](https://user-images.githubusercontent.com/49121847/106699753-ced83b80-6626-11eb-81d1-6a95a2b1249a.PNG)   
-  > 🍏 [Frontend](./front_end/) : React   
+  > ![아키텍쳐](https://user-images.githubusercontent.com/49121847/106699753-ced83b80-6626-11eb-81d1-6a95a2b1249a.PNG) 
+
+  > 🍏 [Frontend](./front_end/) : React  
   > 🍏 [Web Server](./nginx/) : Nginx(Reverse Proxy)  
   > 🍏 [WSGI](https://gunicorn.org/) : gunicorn   
   > 🍏 [Application Server](./back_end/) : Django  
