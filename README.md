@@ -12,11 +12,11 @@
 
 
 ### 1. Image file 
-![imageupload](https://user-images.githubusercontent.com/49121847/106716709-1a4c1300-6642-11eb-9a87-e3fefc7fa157.gif)
+![imageupload](https://user-images.githubusercontent.com/49121847/106717050-82025e00-6642-11eb-9d15-4803b759e671.gif)
 
 
 ### 2. Webcam
-![webcam](https://user-images.githubusercontent.com/49121847/106716722-1d470380-6642-11eb-884a-596c13a0e411.gif)
+![webcam](https://user-images.githubusercontent.com/49121847/106717061-862e7b80-6642-11eb-8cd9-2a04011f5274.gif)
 
 
 ## 🍌Index
