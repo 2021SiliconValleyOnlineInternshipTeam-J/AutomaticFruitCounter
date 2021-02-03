@@ -47,7 +47,7 @@
   > 🍏 [front_end/src/pages/logo](./front_end/src/pages/logo) : Directory for logos
 
 <div align="right">
-    <b><a href="#fruit-billing">⬆️ Back to Top</a></b>
+    <b><a href="#automatic-fruit-counter">⬆️ Back to Top</a></b>
 </div>
 
 
@@ -80,7 +80,7 @@
 
 
 <div align="right">
-    <b><a href="#fruit-billing">⬆️ Back to Top</a></b>
+    <b><a href="#automatic-fruit-counter">⬆️ Back to Top</a></b>
 </div>
 
 
@@ -94,7 +94,7 @@
 | Dahyeon Jeong <br /> <img src="https://avatars.githubusercontent.com/u/77030528?s=460&v=4" width="100" />  | Republic Of Korea | [Github](https://github.com/DahyeonJeong)| Front End |
 
 <div align="right">
-    <b><a href="#fruit-billing">⬆️ Back to Top</a></b>
+    <b><a href="#automatic-fruit-counter">⬆️ Back to Top</a></b>
 </div>
 
 
@@ -103,7 +103,7 @@
 * Django
 
 <div align="right">
-    <b><a href="#fruit-billing">⬆️ Back to Top</a></b>
+    <b><a href="#automatic-fruit-counter">⬆️ Back to Top</a></b>
 </div>
 
 
@@ -129,3 +129,7 @@ docker-compose build
 ```
 docker-compose up
 ```
+
+<div align="right">
+    <b><a href="#automatic-fruit-counter">⬆️ Back to Top</a></b>
+</div>
