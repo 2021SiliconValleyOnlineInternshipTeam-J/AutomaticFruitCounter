@@ -10,21 +10,20 @@
 </p>
 -   Automatic fruit counter is web projects that classify and automatically calculate fruits.
 
-## 🍓 Demo
 > ### 1. image file 
 ![1 사진](https://user-images.githubusercontent.com/49121847/106707194-2fba4080-6634-11eb-8ea6-aa1cd68d110e.gif)
 > ### 2. webcam
 ![2 웹캠](https://user-images.githubusercontent.com/49121847/106707204-32b53100-6634-11eb-9736-2ed1e6eb015f.gif)
 
 ## 🍌Index
-> <b><a href="#architecture">🍒Architecture</a></b>  
-> <b><a href="#frontend">🍒Frontend</a></b>  
-> <b><a href="#backend">🍒Backend</a></b>  
-> <b><a href="#contributors">🍒Contributors</a></b>  
-> <b><a href="#framework">🍒Framework</a></b>  
-> <b><a href="#docker-prerequisites">🍒Docker Prerequisites</a></b>  
+> <b><a href="#architecture">🍓Architecture</a></b>  
+> <b><a href="#frontend">🍓Frontend</a></b>  
+> <b><a href="#backend">🍓Backend</a></b>  
+> <b><a href="#contributors">🍓Contributors</a></b>  
+> <b><a href="#framework">🍓Framework</a></b>  
+> <b><a href="#docker-prerequisites">🍓Docker Prerequisites</a></b>  
 
-## 🍒Architecture
+## 🍓Architecture
   > ![아키텍쳐](https://user-images.githubusercontent.com/49121847/106699753-ced83b80-6626-11eb-81d1-6a95a2b1249a.PNG)  
   > 🍏 [Frontend](./front_end/) : React  
   > 🍏 [Web Server](./nginx/) : Nginx(Reverse Proxy)  
@@ -34,7 +33,7 @@
   
 
 
-## 🍒Frontend
+## 🍓Frontend
 ### 🍍Design
   > [🖍Design Document](https://www.notion.so/984e7c8ddc0a4cd1875fa445a0039524)    
   
@@ -48,7 +47,7 @@
 </div>
 
 
-## 🍒Backend
+## 🍓Backend
 
 ### 🍍Object Detection Model
   > 🍏 [YOLOv5](https://pytorch.org/hub/ultralytics_yolov5/)  
@@ -81,7 +80,7 @@
 </div>
 
 
-## 🍒Contributors
+## 🍓Contributors
 | Name | Country | Where to find you | Role |
 | ---- | ------- | ----------------- | ---- |
 | MinJae Kim <br /> <img src="https://avatars.githubusercontent.com/u/33440010?s=460&u=0b6b72d249309eb95a88afa55a1f954f447a88b7&v=4" width="100" />  | Republic Of Korea | [Github](https://github.com/minjae9610)| Back End |
@@ -95,7 +94,7 @@
 </div>
 
 
-## 🍒Framework
+## 🍓Framework
 * ReactJS
 * Django
 
@@ -104,7 +103,7 @@
 </div>
 
 
-## [](https://github.com/shpark76/docker-demo#docker-prerequisites)🍒Docker Prerequisites
+## [](https://github.com/shpark76/docker-demo#docker-prerequisites)🍓Docker Prerequisites
 
 -   Windows [https://docs.docker.com/docker-for-windows/install/](https://docs.docker.com/docker-for-windows/install/)
 -   Mac [https://docs.docker.com/docker-for-mac/install/](https://docs.docker.com/docker-for-mac/install/)
