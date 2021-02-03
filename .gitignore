@@ -178,7 +178,7 @@ fabric.properties
 .idea/caches/build_file_checksums.ser
 
 # ignore MongoDB Folder
-mongo/
+mongo/db/
 
 # OSX
 .DS_Store
